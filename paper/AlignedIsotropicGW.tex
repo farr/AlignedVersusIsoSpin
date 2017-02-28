@@ -16,9 +16,11 @@
 \newcommand{\checkme}[1]{\textcolor{red}{#1}}
 
 \newcommand{\OOneSigmaIsoAligned}{\checkme{1.7}}
-\newcommand{\OOneOddsIsoAligned}{\checkme{0.044}}
+\newcommand{\OOneOddsIsoAligned}{\checkme{0.087}}
 \newcommand{\OTwoSigmaIsoAlignedMin}{\checkme{3.0}}
 \newcommand{\OTwoOddsIsoAlignedMin}{\checkme{0.0012}}
+
+\newcommand{\ilya}[1]{\textcolor{purple}{#1}}
 
 \begin{document}
 
@@ -46,19 +48,17 @@
   and Computation, University of Maryland, College Park MD
   20742, United States}
 
-\author[0000-0002-6254-1617]{Alberto Vecchio}
-
-\affiliation{Birmingham Institute for Gravitational Wave Astronomy,
-  University of Birmingham, Birmingham, B15 2TT, United Kingdom}
-
 \author[0000-0002-6134-8946]{Ilya Mandel}
 
 \affiliation{Birmingham Institute for Gravitational Wave Astronomy,
   University of Birmingham, Birmingham, B15 2TT, United Kingdom}
 
-\author{Friends}
+\author[0000-0002-6254-1617]{Alberto Vecchio}
 
-\email{w.farr@bham.ac.uk,miller@astro.umd.edu,av@star.sr.bham.ac.uk,imandel@star.sr.bham.ac.uk}
+\affiliation{Birmingham Institute for Gravitational Wave Astronomy,
+  University of Birmingham, Birmingham, B15 2TT, United Kingdom}
+
+\email{w.farr@bham.ac.uk,simons@star.sr.bham.ac.uk,miller@astro.umd.edu,imandel@star.sr.bham.ac.uk,av@star.sr.bham.ac.uk}
 
 \begin{abstract}
   The first direct detections of \acp{GW} from merging \acp{BBH} in
@@ -82,7 +82,10 @@
   would enable at least a $\OTwoSigmaIsoAlignedMin\sigma$
   ($\OTwoOddsIsoAlignedMin$ odds ratio) distinction between the
   isotropic and aligned models, and in most cases better than
-  $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).
+  $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).  The existing data
+  strongly suggest a dynamical formation secnario for the observed
+  systems, and this will be confirmed (or overturned) confidently in
+  the near future by subsequent observations.
 \end{abstract}
 
 \acresetall{}
@@ -133,6 +136,25 @@ can authoritatively suggest {\it any} particular spin distribution.  This does,
 however, allow us to see how sensitive the $\chieff$ distribution is to spin alignment 
 models given uncertainties about the spin magnitudes.
 
+\subsection{Ilya's Caveats}
+
+We have analysed the observed spin distribution for BBH mergers detected by aLIGO during the O1 science run and compared it to a few simple models.  Here, we discuss observational and modelling constrains on the predicted spin distribution.  We separate these into a discussion of spin magnitudes and spin directions (spin-orbit misalignment angles) as in the preceding analysis; however, it is worth pointing out that, contrary to our simplified assumptions, the magnitude and direction distributions may well be coupled.
+
+Other than the LIGO observations of binary black holes discussed above, the best constraints on BH spin magnitudes and directions come from BH X-ray binaries(XRBs). Observations of spin magnitudes in BH XRBs have been claimed through three different techniques: continuum flux measurements, iron K-$\alpha$ line measurements, and quasi-periodic oscillations (QPOs) \citep[e.g.,][for a review]{MillerMiller:2015}. All measurements suffer from both statistical uncertainty and possibly very significant systematics.  Both continuum flux and iron K-$\alpha$ line measurements indicate that some black holes may have very rapid spins, $\chi>0.9$; however, they also disagree on several spin measurements.  Meanwhile, QPO measurements find much lower BH spins \ilya{[check numbers and add reference]}.
+
+Although BH spin-orbit alignment is assumed in continuum flux measurements \citep{MillerMiller:2015}, some BH XRBs, including GRO J1655-40 \ilya{and 4U 1543-475?} appear to indicate that the micro quasar jet, presumably aligned with the BH spin axis, is misaligned with the orbit.  Moreover, initial stellar spins in massive binaries have been observed to be misaligned \ilya{[ref]}, though there are opportunities for realignment during binary evolution, as described below.
+
+Several models for binary black hole formation have been proposed \citep[e.g.,][]{GW150914:astro}, yielding potentially different spin distributions.
+
+The spin directions of binary black holes formed dynamically through interactions in dense stellar environments \ilya{[add refs. if not discussed elsewhere]} are expected to be isotropic given the absence of a preferred direction \citep[e.g.,][]{Rodriguez:2016spins} and the persistence of an isotropic distribution through post-Newtonian evolution \citep{Schnittman:2004}. 
+
+Chemically homogeneous evolution is a possible BBH formation channel specific to rapidly spinning massive stars aligned by tidal effects \ilya{[add refs. if not discussed elsewhere]}.  However, wind-driven mass loss can spin down even some of these stars to the point that values of $\chi_\textrm{eff}$ as low as $\sim 0.2$ are possible, though alignment should be preserved \citep{Marchant:2017}.
+
+The classical isolated binary evolution channel through the common-envelope (CE) phase \ilya{[add refs. if not discussed elsewhere]} yields the following typical formation channel for binary black holes: possible mass transfer from the primary to the secondary; the collapse of the primary into a BH; the formation and ejection of a CE as a consequence of dynamically unstable mass transfer from the secondary to the primary; possible further mass transfer from remaining secondary core to primary; collapse of the secondary into a BH; a merger induced by GW emission \citep[e.g.,][]{Belczynski:2016,Stevenson:2017}.  Interaction before the collapse of the primary could realign the binary, but the primary’s spin in the wide (separation $\gtrsim 10$ AU) binary can easily be misaligned by even moderate \citep{Mandel:2015kicks} natal kicks.  Realignment of the primary through subsequent mass accretion is unlikely given the small amount of accreted mass, except perhaps during hyper-critical accretion during CE \ilya{[add ref. to Linden?]}; realignment through dissipation in the possibly warped accretion disk \citep{BardeenPatterson} is possible, but calculations suggest it is unlikely for stellar-mass binaries \citep{KLOP}.  
+
+The secondary should tidally align with the orbit before the onset of mass transfer \citep[e.g.,][]{Kalogera:2000,Gerosa:2013}; however, most of its angular momentum would be lost to the envelope, which will be ejected during the CE phase.  The remnant core may or may not be efficiently re-aligned, depending on the separation between the secondary’s core and the BH immediately after the CE is ejected \citep{Kushnir:2017}.  The secondary’s natal kick will be small relative to the orbital velocity of the close post-CE binary, so any further kick-induced misalignment will be moderate.
+
+The analysis above assumed the conservation of angular momentum during core collapse. However, we know that this may not always be the case.  For example, the magnitude of the angular momentum cannot possibly be conserved during the collapse to a BH if the pre-collapse dimensionless spin exceeds $1$.  The direction of the angular momentum may also change; for example, the misalignment of the secondary pulsar in the double pulsar \ilya{J0737} by $\sim 135^{\circ}$ relative to the orbit in the apparent absence of a kick indicated that, at least for slowly spinning objects, a spin tilt during a supernova may be possible.  The dependence of the magnitude and direction of the spin on its pre-collapse values depends on the stellar structure (i.e., the level of angular momentum coupling between the collapsing and ejected material), the supernova explosion (if any), and the details of the post-collapse fallback process \ilya{[Check if Levin and Matzner are done]}.
 
 \section{Model Selection Formalism}
 \label{sec:formalism}
