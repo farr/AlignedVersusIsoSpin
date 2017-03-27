@@ -18,8 +18,8 @@
 
 \newcommand{\checkme}[1]{\textcolor{red}{#1}}
 
-\newcommand{\OOneSigmaIsoAligned}{\checkme{1.8}}
-\newcommand{\OOneOddsIsoAligned}{\checkme{0.08}}
+\newcommand{\OOneSigmaIsoAligned}{\checkme{1.7}}
+\newcommand{\OOneOddsIsoAligned}{\checkme{0.087}}
 \newcommand{\OTwoSigmaIsoAlignedMin}{\checkme{2.9}}
 \newcommand{\OTwoOddsIsoAlignedMin}{\checkme{0.0035}}
 
@@ -87,7 +87,7 @@
   suite of models for the spin distribution.  By considering the
   effect of an additional 10 detections drawn from the various models
   in the suite we show that if all observations come from a single
-  population such an agumented data set would enable at least a
+  population such an augmented data set would enable at least a
   $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds
   ratio) distinction between the isotropic and aligned models, and in
   most cases better than $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).
@@ -248,7 +248,7 @@ measurements, which bound $\chieff \gtrsim 0.2$ at 90\% credibility
 \citep{2016PhRvL.116x1103A}.
 
 \begin{figure}
-  \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models.png}
+  \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models}
   \caption{Odds ratios among our models using the approximations to
     the posteriors on $\chieff$ from the O1 observations shown in
     Figure \ref{fig:O1-posteriors}.  The flat (``F''), high (``H''),
@@ -331,7 +331,7 @@ spins, but concluded that several hundred sources would be required to
 adequately separate the models.  The ``aligned'' population in that
 study permitted spins nearly parallel or anti-parallel to the orbital
 axis, i.e.\ $\hat{S}\cdot \hat{L} \simeq \pm 1$, in contrast to our
-aligned models; thus the aligned/isotropic discrimitating power in
+aligned models; thus the aligned/isotropic discriminating power in
 \citet{2017CQGra..34cLT01V} relies effectively on measurements of the
 detailed shape of the $\chieff$ distribution and, as noted above,
 measurements are not very sensitive to the spin magnitude distribution
@@ -486,7 +486,7 @@ In this section we assume that the true distribution of BBH spin-orbit misalignm
 %\end{figure}
 %
 
-We fit a mixture model (labelled model 'M') where a fraction $f_i$ ($f_i=\lambda$ in the derivations above) of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the `uniform', `increasing' and `decreasing' distributions introduced in Section X, assuming all BHs have their spin magnitude drawn from the same distribution. We calculate the posterior given by EquationX plot the posterior distribution/cumulative posterior in Figure~\ref{fig:mixture_fraction_posterior}. We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the `decreasing', `uniform' and `increasing' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1. Thus, irrespective of our ignorance of the BH spin magnitude distribution, we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. 
+We fit a mixture model (labelled model 'M') where a fraction $f_i$ ($f_i=\lambda$ in the derivations above) of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the `uniform', `increasing' and `decreasing' distributions introduced in Section X, assuming all BHs have their spin magnitude drawn from the same distribution. We calculate the posterior given by Equation \ref{eq:magnitude-dists} plot the posterior distribution/cumulative posterior in Figure~\ref{fig:mixture_fraction_posterior}. We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the `decreasing', `uniform' and `increasing' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1. Thus, irrespective of our ignorance of the BH spin magnitude distribution, we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. 
 
 If we assume that the subpopulation of BBHs with isotropically distributed spin orientations corresponds to a subpopulation of dynamically formed BBHs, our result suggests that the majority of merging BBHs observed by LIGO are formed dynamically, rather than through isolated binary evolution.
 
@@ -505,7 +505,7 @@ unknown, value of the effective spin, drawn from the population
 distribution, which may have some parameters $\lambda$; then the
 system is observed, represented by the likelihood function, which
 results in a distribution for the true effective spin (and all other
-paremeters describing the system) consistent with the data.
+parameters describing the system) consistent with the data.
 Combining, the joint posterior on each system's $\chieff^i$ parameters
 and the population parameters $\lambda$ implied by a set of
 observations each with data $d^i$, is
@@ -528,7 +528,7 @@ The components of this formula are
   cases discussed above, there are no parameters for the population.)
 \item The prior on the population-level parameters, $p(\lambda)$.
 \end{itemize}
-If we do not care about the individual event $\chieff$ paremetrs, we
+If we do not care about the individual event $\chieff$ parameters, we
 can integrate them out, obtaining
 \begin{equation}
   p\left( \lambda \mid \left\{ d^i \right\} \right) \propto \left[ \prod_{i=1}^{N_\mathrm{obs}} \int \dd \chieff^i \, p\left(d^i \mid \chieff^i \right) p\left( \chieff^i \mid \lambda \right) \right] p\left(\lambda\right).
