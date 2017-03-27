@@ -129,7 +129,12 @@ this time, we have approximated the posterior as a Gaussian
 distribution with the same mean and 90\% credible interval as quoted
 in \citet{O1-BBH}.  There is essentially no posterior support for
 $\chieff \gtrsim 0.5$ as observed in the majority of the
-electromagnetically-detected stellar-mass black hole population.
+electromagnetically-detected stellar-mass black hole population.  The
+hierarchical modelling is relatively insensitive to the precise
+details of the posterior distributions, unlike single-source analysis;
+notably our approximation does permit $\chieff = 0$ for GW151226 while
+the true posterior rules this out at high confidence
+\citep{2016PhRvL.116x1103A,O1-BBH}.
 
 \begin{figure}
   \plotone{../plots/chi-eff-mock-posteriors}
@@ -505,8 +510,29 @@ the prior used to produce the posterior samples):
 \section{Mass Ratio}
 \label{sec:mass-ratio}
 
-\will{Some plots go here showing how the distribution changes as a
-  function of mass ratio.}
+Figure \ref{fig:mass-ratio-sensitivity} shows the distributions of
+$\chieff$ that would obtain with a mass ratio $q = m_2/m_1 = 0.5$
+compared to the distributions with $q = 1$ used above.  The details of
+the distribution are sensitive to the mass ratio, but in our analysis
+we are primarily sensitive to the changing \emph{sign} of $\chieff$
+under the isotropic models.  This latter property is insensitive to
+mass ratio.  As an example, the distinction between the three
+different spin amplitude distributions under ten additional detections
+is quite weak compared to the aligned/isotropic distinction in Figure
+\ref{fig:O2-predictions}.  The differences in the $\chieff$
+distribution between $q = 1$ and $q = 0.5$ are even smaller than the
+differences between the different magnitude distributions.
+
+\begin{figure}
+  \plotone{../plots/chi-eff-distributions-q05}
+  \caption{Distributions of $\chieff$ assuming all merging black holes
+    have equal masses ($q=1$) or a 2:1 mass ratio ($q = 0.5$).  The
+    details of the distribution are sensitive to the mass ratio, but
+    in our analysis we are primarily sensitive to the changing
+    \emph{sign} of $\chieff$ under the isotropic models.  This latter
+    property is unchanged under changing mass ratio.}
+  \label{fig:mass-ratio-sensitivity}
+\end{figure}
 
 \bibliography{AlignedIsotropicGW}
 
