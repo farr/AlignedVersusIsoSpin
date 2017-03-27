@@ -20,8 +20,8 @@
 
 \newcommand{\OOneSigmaIsoAligned}{\checkme{1.8}}
 \newcommand{\OOneOddsIsoAligned}{\checkme{0.08}}
-\newcommand{\OTwoSigmaIsoAlignedMin}{\checkme{3.0}}
-\newcommand{\OTwoOddsIsoAlignedMin}{\checkme{0.0012}}
+\newcommand{\OTwoSigmaIsoAlignedMin}{\checkme{2.9}}
+\newcommand{\OTwoOddsIsoAlignedMin}{\checkme{0.0035}}
 
 \newcommand{\ilya}[1]{\textcolor{purple}{#1}}
 \newcommand{\will}[1]{\textcolor{cyan}{#1}}
@@ -105,10 +105,19 @@ Following the detection of a merging \ac{BBH} system, \ac{PE} tools
 \citep{2015PhRvD..91d2003V} compare model gravitational waveforms
 \citep{2014PhRvD..89h4006P,2014PhRvD..89f1502T,2014PhRvL.113o1101H}
 against the observed data to obtain a posterior distribution on the
-parameter space that describes the compact binary source.  The spin
-parameter with the largest effect on waveforms, and a correspondingly
-tight constraint from the data, is a mass-weighted, aligned,
-``effective spin,''
+parameter space that describes the compact binary source.  The model
+waveforms incorporate approximations to the true behaviour of the
+merging systems that are expected to break down for sufficiently high
+mis-aligned spins; detailed comparisons with numerical relativity
+computations using no approximations to the dynamics
+\citep{2016PhRvD..94f4035A} show no evidence of such a breakdown in
+GW150914's analysis.  Given the preference of our data for smaller
+spins (discussed below) we assume here that measurements made now and
+in the future are not dominated by systematic errors.
+
+The spin parameter with the largest effect on waveforms, and a
+correspondingly tight constraint from the data, is a mass-weighted,
+aligned, ``effective spin,''
 \begin{equation}
   \chieff = \frac{c}{GM} \left( \frac{\vec{S}_1}{m_1} + \frac{\vec{S}_2}{m_2}
   \right) \cdot \frac{\vec{L}}{\hat{L}} = \frac{1}{M} \left( m_1 a_1^z + m_2 a_2^z \right),
@@ -129,11 +138,12 @@ this time, we have approximated the posterior as a Gaussian
 distribution with the same mean and 90\% credible interval as quoted
 in \citet{O1-BBH}.  There is essentially no posterior support for
 $\chieff \gtrsim 0.5$ as observed in the majority of the
-electromagnetically-detected stellar-mass black hole population.  The
-hierarchical modelling is relatively insensitive to the precise
-details of the posterior distributions, unlike single-source analysis;
-notably our approximation does permit $\chieff = 0$ for GW151226 while
-the true posterior rules this out at high confidence
+electromagnetically-detected stellar-mass black hole population (see
+Section \ref{sec:discussion}).  The analysis here is relatively
+insensitive to the precise details of the posterior distributions;
+other conclusions are more sensitive.  In particular, our
+approximation does permit $\chieff = 0$ for GW151226 while the true
+posterior rules this out at high confidence
 \citep{2016PhRvL.116x1103A,O1-BBH}.
 
 \begin{figure}
@@ -154,10 +164,14 @@ spins or larger spins whose direction is mis-aligned with the orbital
 plane of the binary (i.e.\ spin vectors with small $z$-components).
 Mis-alignment is capable of producing \emph{negative} values of
 $\chieff$, however, while small, aligned spins will always have
-$\chieff \geq 0$.  To quantify the degree of support for these two
-alternate explanations of small $\chieff$ values in the merging
-\ac{BBH} population, we compared the Bayesian evidence for various
-simple models of the spin population using the \ac{GW} data set.
+$\chieff \geq 0$.  This difference provides strong discriminating
+power between the two angular distributions, even without good
+information about the magnitude distribution; to the extent that data
+support negative $\chieff$ they weigh heavily against aligned models.
+To quantify the degree of support for these two alternate explanations
+of small $\chieff$ values in the merging \ac{BBH} population, we
+compared the Bayesian evidence for various simple models of the spin
+population using the \ac{GW} data set.
 
 Each of our models for the merging \ac{BBH} spin population assumes
 that the merging black holes are of equal mass (this is marginally
@@ -227,7 +241,11 @@ favoured model among those with an aligned distribution also has the
 ``decreasing'' magnitude distribution.  The odds ratio between the
 aligned and isotropic models is $\OOneOddsIsoAligned$, or
 $\OOneSigmaIsoAligned\sigma$; thus the data favour isotropic spins
-among our suite of models.
+among our suite of models.  While the data favour spin amplitude
+distributions with small spin magnitudes, note that a model with all
+\ac{BBH} systems having zero spin is ruled out by the GW151226
+measurements, which bound $\chieff \gtrsim 0.2$ at 90\% credibility
+\citep{2016PhRvL.116x1103A}.
 
 \begin{figure}
   \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models.png}
@@ -260,6 +278,13 @@ additional 10 detections allow the the correct angular distribution to
 be distinguished with greater than $5\sigma$ ($2.9 \times 10^{-7}$
 odds) credibility; and in the worst case the distinction is
 $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
+Note that such future detections should permit a confident distinction
+between \emph{angular} distributions, we will remain very uncertain
+about the \emph{magnitude} distribution until we have a much larger
+number of observations.  In Figure \ref{fig:O2-predictions}, the odds
+ratio between different magnitude distributions with the same angular
+distribution is much closer to one than the odds ratio between angular
+distributions.
 
 \begin{figure}
   \plotone{../plots/six-way-O2-model-selection}
@@ -272,17 +297,17 @@ $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
     bar gives the median odds ratio relative to the model from which
     the additional observations are drawn; the green line gives the
     68\% ($1 \sigma$) symmetric interval of odds ratios over 1000
-    separate draws from the model distribution.  The closest ratio
-    between the most-favoured isotropic model and the most-favoured
-    aligned model is $\OTwoOddsIsoAlignedMin$, corresponding to
-    $\OTwoSigmaIsoAlignedMin\sigma$ preference for the correct angular
-    distribution; most models result in more than $5\sigma$ preference
-    for the correct angular distribution.  Because the three
-    observations from Section \ref{sec:O1} are included in each data
-    set the ``correct'' model is not necessarily preferred over the
-    others, particularly when that model uses the ``high'' magnitude
-    distribution, which is strongly dis-favoured from the O1
-    observations alone.}
+    separate draws from the model distribution.  The closest median
+    ratio between the most-favoured isotropic model and the
+    most-favoured aligned model is $\OTwoOddsIsoAlignedMin$,
+    corresponding to $\OTwoSigmaIsoAlignedMin\sigma$ preference for
+    the correct angular distribution; most models result in more than
+    $5\sigma$ preference for the correct angular distribution.
+    Because the three observations from Section \ref{sec:O1} are
+    included in each data set the ``correct'' model is not necessarily
+    preferred over the others, particularly when that model uses the
+    ``high'' magnitude distribution, which is strongly dis-favoured
+    from the O1 observations alone.}
 \end{figure}
 
 \section{Discussion}
@@ -296,7 +321,9 @@ it is no longer possible to resolve the negative spin with a small
 number of observations.  As noted below, however, spins observed in
 X-ray binaries are typically large, and most models of isolated binary
 evolution do not produce systems with spins uniformly bounded to small
-values.
+values.  Additionally, models which do not permit \emph{some} spins
+with $\chieff \gtrsim 0.2$ are ruled out by the GW151226 observations
+\citep{2016PhRvL.116x1103A}.
 
 \citet{2017CQGra..34cLT01V} also studied the possibility of
 distinguishing aligned and isotropic angular distributions of \ac{BBH}
@@ -304,36 +331,39 @@ spins, but concluded that several hundred sources would be required to
 adequately separate the models.  The ``aligned'' population in that
 study permitted spins nearly parallel or anti-parallel to the orbital
 axis, i.e.\ $\hat{S}\cdot \hat{L} \simeq \pm 1$, in contrast to our
-aligned models.  Anti-parallel spins are strongly disfavoured in
-models of isolated binary evolution \citep[e.g.,]{Kalogera:2000}.  
+aligned models; thus the aligned/isotropic discrimitating power in
+\citet{2017CQGra..34cLT01V} relies effectively on measurements of the
+detailed shape of the $\chieff$ distribution and, as noted above,
+measurements are not very sensitive to the spin magnitude distribution
+that controls the shape of $\chieff$.  Note that anti-parallel spins
+are strongly disfavoured in models of isolated binary evolution (see,
+for example, \citet{Kalogera:2000}).
 
 In order to perform our analysis we need to select models for the
 distribution of the dimensionless spin parameters of stellar-mass
-black holes.  Data for such model selection is sparse.
+black holes.  Observational data for such model selection is sparse.
 \citet{2015PhR...548....1M} give current estimates of the spin
 parameters for stellar-mass black holes, obtained using disk
-reflection and/or disk continuum methods.
-
-Most of the systems studied are low-mass X-ray binaries (i.e., the
-donor star has a mass $M_{\rm donor}<1~M_\odot$) rather than the
-high-mass X-ray binaries that are likely to be the progenitors of
-double black hole binaries.  In addition, there are substantial
-systematic errors that can complicate either type of analysis (see
-\citealt{2015PhR...548....1M} for a discussion). Nonetheless, if we
-take the reported spin magnitudes as representative then we find that
-there is a preference for high spins; for example, 14 of the 19
-systems with reported spins have spin parameters in excess of 0.5.
-The masses and spin parameters of stellar-mass black holes are
-unlikely to be altered significantly by accretion (low-mass donors
-simply do not have enough mass and high-mass donors have a very short
-phase in which they transfer mass; a variant of this long-standing
-argument was presented by \citet{1999MNRAS.305..654K}).  Thus the
-current spin parameters probably are close to their values upon core
-collapse.  We emphasize, however, that the specific processes involved
-in the production of black hole binaries could alter the spin
-distribution of those holes: for example, close tidal interactions
-could spin up the core, or stripping of the envelope could reduce the
-available angular momentum.
+reflection and/or disk continuum methods.  Most of the systems studied
+are low-mass X-ray binaries (i.e., the donor star has a mass
+$M_{\rm donor}<1~M_\odot$) rather than the high-mass X-ray binaries
+that are likely to be the progenitors of double black hole binaries.
+In addition, there are substantial systematic errors that can
+complicate either type of analysis (see \citealt{2015PhR...548....1M}
+for a discussion). Nonetheless, if we take the reported spin
+magnitudes as representative then we find that there is a preference
+for high spins; for example, 14 of the 19 systems with reported spins
+have spin parameters in excess of 0.5.  The masses and spin parameters
+of stellar-mass black holes are unlikely to be altered significantly
+by accretion (low-mass donors simply do not have enough mass and
+high-mass donors have a very short phase in which they transfer mass;
+a variant of this long-standing argument was presented by
+\citet{1999MNRAS.305..654K}).  Thus the current spin parameters
+probably are close to their values upon core collapse; however, the
+specific processes involved in the production of black hole binaries
+could alter the spin distribution of those holes.  For example, close
+tidal interactions could spin up the core, or stripping of the
+envelope could reduce the available angular momentum.
 
 Although BH spin-orbit alignment is assumed in continuum flux
 measurements \citep{2015PhR...548....1M}, some BH XRBs, including GRO
@@ -348,15 +378,12 @@ opportunities for realignment during binary evolution, as described
 below.
 
 There are a few modelling constrains on the predicted spin
-distribution.  We separate these into a discussion of spin magnitudes
-and spin directions (spin-orbit misalignment angles) as in the
-preceding analysis; however, it is worth pointing out that, contrary
-to our simplified assumptions, the magnitude and direction
-distributions may well be coupled.
-
-Several models for binary black hole formation have been proposed
-\citep[e.g.,][]{2016ApJ...818L..22A}, yielding potentially different spin
-distributions.
+distribution (see, for example, \citep{2016ApJ...818L..22A}).  We
+separate these into a discussion of spin magnitudes and spin
+directions (spin-orbit misalignment angles) as in the preceding
+analysis; however, it is worth pointing out that, contrary to our
+simplified assumptions, the magnitude and direction distributions may
+well be coupled.
 
 The spin directions of binary black holes formed dynamically through
 interactions in dense stellar environments
@@ -422,8 +449,13 @@ between the collapsing and ejected material), the supernova explosion
 In short, the angular distribution of spins in \acp{BBH} formed
 through isolated binary evolution is uncertain; nevertheless, it is
 more probable that spins are aligned and non-zero after evolution
-through this channel than not.  
+through this channel than not, while an isotropic distribution of
+non-zero spins is the natural outcome of dynamical formation
+processes.
 
+\acknowledgements
+
+We thank Richard O’Shaughnessy for comments on this work.  
 
 \appendix
 
