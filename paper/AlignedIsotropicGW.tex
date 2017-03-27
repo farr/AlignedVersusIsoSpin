@@ -18,8 +18,8 @@
 
 \newcommand{\checkme}[1]{\textcolor{red}{#1}}
 
-\newcommand{\OOneSigmaIsoAligned}{\checkme{1.7}}
-\newcommand{\OOneOddsIsoAligned}{\checkme{0.087}}
+\newcommand{\OOneSigmaIsoAligned}{\checkme{1.8}}
+\newcommand{\OOneOddsIsoAligned}{\checkme{0.08}}
 \newcommand{\OTwoSigmaIsoAlignedMin}{\checkme{3.0}}
 \newcommand{\OTwoOddsIsoAlignedMin}{\checkme{0.0012}}
 
@@ -167,9 +167,9 @@ magnitude distributions
 \begin{equation}
   \label{eq:magnitude-dists}
   p(a) = \begin{cases}
-    2\left(1-a\right) & \textnormal{``decreasing''} \\
+    2\left(1-a\right) & \textnormal{``low''} \\
     1 & \textnormal{``flat''} \\
-    2\left(a-1\right) & \textnormal{``increasing''}
+    2\left(a-1\right) & \textnormal{``high''}
   \end{cases},
 \end{equation}
 and pairing with either an isotropic angular distribution or a
@@ -183,8 +183,8 @@ These models are shown in Figure \ref{fig:chieff-distribution-models}.
     distribution of $\chieff$ considered in this paper.  In all models
     we assume that the binary mass ratio $q \equiv m_1/m_2 = 1$ and
     that the same distribution of spin vectors obtains for each
-    component.  The ``flat'' (blue lines), ``increasing,'' (green
-    lines), and ``decreasing'' (red lines) magnitude distributions are
+    component.  The ``flat'' (blue lines), ``high,'' (green
+    lines), and ``low'' (red lines) magnitude distributions are
     defined in Eq.\ \eqref{eq:magnitude-dists}.  Solid lines give the
     $\chieff$ distribution under the assumption that the orientations
     of the spins are isotropic; dashed lines give the distribution
@@ -219,17 +219,17 @@ spins among our suite of models.
   \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models.png}
   \caption{Odds ratios among our models using the approximations to
     the posteriors on $\chieff$ from the O1 observations shown in
-    Figure \ref{fig:O1-posteriors}.  The flat (``F''), increasing
-    (``I''), and decreasing (``D'') spin magnitude distributions (see
-    Eq.\ \eqref{eq:magnitude-dists}) are paired with isotropic,
-    aligned angular distributions (``$\mathrm{I}$'',
-    ``$\mathrm{A}$''), as well as a mixture model of the two
-    (``$\mathrm{M}$'').  The most-favoured models have a decreasing
-    distribution of spin magnitudes.  The odds ratio between these
-    models is $\OOneOddsIsoAligned$, or $\OOneSigmaIsoAligned\sigma$.
-    For all magnitude distributions the pure-isotropic models are
-    preferred over the mixture models; correspondingly, the posterior
-    on the mixture fraction peaks at 100\% isotropic.}
+    Figure \ref{fig:O1-posteriors}.  The flat (``F''), high (``H''),
+    and low (``L'') spin magnitude distributions (see Eq.\
+    \eqref{eq:magnitude-dists}) are paired with isotropic, aligned
+    angular distributions (``$\mathrm{I}$'', ``$\mathrm{A}$''), as
+    well as a mixture model of the two (``$\mathrm{M}$'').  The
+    most-favoured models have a decreasing distribution of spin
+    magnitudes.  The odds ratio between these models is
+    $\OOneOddsIsoAligned$, or $\OOneSigmaIsoAligned\sigma$.  For all
+    magnitude distributions the pure-isotropic models are preferred
+    over the mixture models; correspondingly, the posterior on the
+    mixture fraction peaks at 100\% isotropic.}
   \label{fig:O1-odds}
 \end{figure}
 
@@ -266,8 +266,8 @@ $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
     for the correct angular distribution.  Because the three
     observations from Section \ref{sec:O1} are included in each data
     set the ``correct'' model is not necessarily preferred over the
-    others, particularly when that model uses the ``increasing''
-    magnitude distribution, which is strongly dis-favoured from the O1
+    others, particularly when that model uses the ``high'' magnitude
+    distribution, which is strongly dis-favoured from the O1
     observations alone.}
 \end{figure}
 
