@@ -538,6 +538,42 @@ the prior used to produce the posterior samples):
   p\left( \lambda \mid \left\{ d^i \right\} \right) \propto \left[ \prod_{i=1}^{N_\mathrm{obs}} \frac{1}{N_i} \sum_{j=1}^{N_i} \frac{p\left( \chieff^{ij} \mid \lambda \right)}{p\left( \chieff^{ij} \right)} \right] p\left(\lambda\right).
 \end{equation}
 
+\subsection{Order of Magnitude Calculation}
+\label{sec:om-odds-ratio}
+
+It is possible to estimate at an order-of-magnitude level the rate at
+which evidence accumulates in favour of or against the isotropic
+models as more systems are detected.  Based on Figure
+\ref{fig:chieff-distribution-models}, approximate the isotropic
+population $\chieff$ distribution as uniform on
+$\chieff \in \left[ -0.25, 0.25 \right]$ and the aligned population
+$\chieff$ distribution as uniform on
+$\chieff \in \left[0, 0.5\right]$.  Then the odds ratio between the
+isotropic and aligned models for each event is approximately
+\begin{equation}
+  \label{eq:approx-odds}
+  \frac{p\left( d \mid I \right)}{p\left( d \mid A \right)} \simeq
+  \frac{P\left( -0.25 \leq \chieff \leq 0.25 \right)}{P\left( 0 \leq \chieff \leq 0.5 \right) },
+\end{equation}
+where $P\left( A \leq \chieff \leq B \right)$ is the posterior
+probability that $\chieff$ is between $A$ and $B$.  Using our
+approximations to the $\chieff$ posteriors described above, this gives
+an odds ratio of $5$ in favour of the isotropic models, which is about
+a factor of two smaller than the ratio in the more careful calculation
+described in Section \ref{sec:O1}.  This is a satisfactory answer at
+an order-of-magnitude level.
+
+If the true distribution is isotropic and follows this simple model,
+and our measurement uncertainties on $\chieff$ are $\simeq 0.2$, then
+each subsequent measurement contributes on average a factor of
+$\sim 2.5$ to the overall odds.  (There is a 1/3 chance each of the
+critical value of $\chieff = 0$ lying at $-1\sigma$, $0$, and
+$+1\sigma$ with respect to the centre of the posterior.)  After ten
+additional events, then, the odds ratio becomes
+$5 \times 2.5^{10} \simeq 5 \times 10^{5}$, or $4.3 \sigma$,
+consistent with the results of the more detailed calculation described
+above.
+
 \section{Mass Ratio}
 \label{sec:mass-ratio}
 
