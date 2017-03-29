@@ -372,25 +372,9 @@ program.   SS and IM acknowledge support from the National Science Foundation un
 
 \section{Mixture model}
 
-%As discussed above, BBHs can form as the end point of isolated binary evolution or dynamically in dense stellar environments. The spin misalignments of BBHs is a signature of their formation mechanism; binaries formed through isolated binary evolution are expected to have their spins aligned with the orbital angular momentum, whilst those formed dynamically are expected to have an isotropic distribution.
-%
-%Rate uncertainties for both of these formation scenarios are large enough that we do not know a priori which will dominate the LIGO detection rate. In the previous section we have shown that a model with isotropic spin directions and 'decreasing' spin magnitudes is favoured by the data.
-%
-%In this section we assume that the true distribution of BBH spin-orbit misalignments observed by LIGO is a mixture of binaries formed through isolated binary evolution (with aligned spins) and dynamical formation (with isotropic spins). 
-\sout{As discussed above, BBHs can form as the end point of isolated binary evolution or dynamically in dense stellar environments. The spin misalignments of BBHs is a signature of their formation mechanism; binaries formed through isolated binary evolution are expected to have their spins aligned with the orbital angular momentum, whilst those formed dynamically are expected to have an isotropic distribution.}
+While we carried out Bayesian comparisons between isotropic and aligned spin distributions under various assumptions, a preference for one of the considered models over the others does not necessarily indicate that it is the correct model.  All of the considered models could be inaccurate for the actual distribution, especially since all of the considered models are based on a number of additional assumptions, such as decoupled spin magnitude and spin misalignment angle distributions and identical distributions for primary and secondary spins.
 
-\sout{Rate uncertainties for both of these formation scenarios are large enough that we do not know a priori which will dominate the LIGO detection rate. In the previous section we have shown that a model with isotropic spin directions and 'decreasing' spin magnitudes is favoured by the data.}
-
-In this section we assume that the true distribution of
-\acp{BBH} observed by LIGO is a mixture of binaries formed
-through isolated binary evolution (with aligned spins) and
-dynamical formation (with isotropic spins). Rate uncertainties
-for both of these formation scenarios are large enough that we
-do not know a priori which will dominate the LIGO detection
-rate.
-\ilya{While we carried out Bayesian comparisons between isotropic and aligned spin distributions under various assumptions, a preference for one of the considered models over the others does not necessarily indicate that it is the correct model.  All of the considered models could be inaccurate for the actual distribution, especially since all of the considered models are based on a number of additional assumptions, such as decoupled spin magnitude and spin misalignment angle distributions and identical distributions for primary and secondary spins.}
-\ilya{We now partly relax the simplified assumptions made earlier by considering the possibility that the} true distribution of BBH spin-orbit misalignments observed by LIGO is a mixture of binaries \ilya{with aligned spins and binaries with isotropic spins}. 
-\sout{formed through isolated binary evolution (with aligned spins) and dynamical formation (with isotropic spins).}
+We now partly relax the simplified assumptions made earlier by considering the possibility that the true distribution of BBH spin-orbit misalignments observed by LIGO is a mixture of binaries with aligned spins and binaries with isotropic spins.
 
 %
 \begin{figure}
@@ -424,16 +408,7 @@ $f_i$ peaks at 1.}
 %\end{figure}
 %
 
-Following \citet{Stevenson:2017spin},  we fit a mixture model (labelled model 'M' in Figure~\ref{fig:O1-odds}) where a fraction $f_i$ of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the ``flat'', ``high'' and ``low'' distributions (Equation~\ref{eq:magnitude-dists}), assuming all BHs have their spin magnitude drawn from the same distribution for both the aligned and isotropic populations. We calculate and plot the posterior on $f_i$ given by Equation~\ref{eq:hierarchical-posterior} ($f_i=\lambda$ in the derivation) in Figure~\ref{fig:mixture_fraction_posterior}. 
-We fit a mixture model (labelled model 'M') where a fraction $f_i$ ($f_i=\lambda$ in the derivations above) of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the `uniform', `increasing' and `decreasing' distributions introduced in Section X, assuming all BHs have their spin magnitude drawn from the same distribution. We calculate the posterior given by Equation \ref{eq:magnitude-dists} plot the posterior distribution/cumulative posterior in Figure~\ref{fig:mixture_fraction_posterior}. We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the `decreasing', `uniform' and `increasing' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1.
-Thus, \ilya{for these spin magnitude distributions} 
-\sout{irrespective of our ignorance of the BH spin magnitude distribution}
-we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. 
-
-We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the ``low'', ``flat'' and ``high'' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1. In all cases, the posterior peaks at $f_i = 1$. Thus, for a range of assumptions regarding the the BH spin magnitude distribution, we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. 
-\sout{If we assume that the subpopulation of BBHs with isotropically distributed spin orientations corresponds to a subpopulation of dynamically formed BBHs, our result suggests that the majority of merging BBHs observed by LIGO are formed dynamically, rather than through isolated binary evolution.}
-
-The evidence ratios of these models to the isotropic distribution with ``flat'' spin magnitudes are 0.85, 0.39 and 0.19 for the ``low'', ``flat'' and ``high'' spin magnitude models. Thus we cannot rule out a mixture with the current data. 
+Following \citet{Stevenson:2017spin},  we fit a mixture model (labelled model 'M' in Figure~\ref{fig:O1-odds}) where a fraction $f_i$ of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the ``flat'', ``high'' and ``low'' distributions (Equation~\ref{eq:magnitude-dists}), assuming all BHs have their spin magnitude drawn from the same distribution for both the aligned and isotropic populations. We calculate and plot the posterior on $f_i$ given by Equation~\ref{eq:hierarchical-posterior} ($f_i=\lambda$ in the derivation) in Figure~\ref{fig:mixture_fraction_posterior}. We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the ``low'', ``flat'' and ``high'' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1. In all cases, the posterior peaks at $f_i = 1$. Thus, for these spin magnitude distributions we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. The evidence ratios of these models to the isotropic distribution with ``flat'' spin magnitudes are 0.85, 0.39 and 0.19 for the ``low'', ``flat'' and ``high'' spin magnitude models. Thus we cannot rule out a mixture with the current data. 
 
 \section{Effect of small spin magnitudes}
 \label{sec:smallspins}
@@ -462,7 +437,7 @@ that the value of alpha corresponds to. We see that for mean spin magnitudes $\l
 \end{figure}
 %
 
-In Figure~\ref{fig:smallspinsalpha} we plot the evidence ratio of aligned to isotropic distributions (plotted as the equivalent sigma) with spin magnitudes given by this model with $\alpha$ in the range $0$ -- $6$. The top axis I shows the mean spin magnitude
+In Figure~\ref{fig:smallspinsalpha} we plot the evidence ratio of aligned to isotropic distributions (plotted as the equivalent sigma) with spin magnitudes given by this model with $\alpha$ in the range $0$ -- $6$. The top axis shows the mean spin magnitude
 that value of alpha corresponds to (i.e., for the ``flat'' distribution $\alpha = 0$, the mean spin magnitude is 0.5). We see that if typical BH spins are $\lesssim 0.2$ we have no evidence for one model over the other.
 
 \section{Hierarchical Modelling} 
