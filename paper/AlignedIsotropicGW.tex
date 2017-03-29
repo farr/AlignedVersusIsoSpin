@@ -48,6 +48,7 @@
 \affiliation{Birmingham Institute for Gravitational Wave Astronomy and
   School of Physics and Astronomy, University of Birmingham,
   Birmingham, B15 2TT, United Kingdom}
+\affiliation{Kavli Institute of Theoretical Physics, University of California, Santa Barbara}
 
 \author{M. Coleman Miller}
 
@@ -60,6 +61,7 @@
 \affiliation{Birmingham Institute for Gravitational Wave Astronomy and
   School of Physics and Astronomy, University of Birmingham,
   Birmingham, B15 2TT, United Kingdom}
+ \affiliation{Kavli Institute of Theoretical Physics, University of California, Santa Barbara}
 
 \author[0000-0002-6254-1617]{Alberto Vecchio}
 
@@ -77,23 +79,23 @@
   systems formed through dynamical interactions among already-compact
   objects are expected to have isotropic spin orientations whereas
   binaries formed from pairs of stars born together are more likely to
-  have spins aligned with the binary orbit as a consequence of their
-  joint evolution toward a \ac{BBH} system.  By considering existing
+  have spins \ilya{preferentially} aligned with the binary orbit as a consequence of their
+  joint evolution toward a \ac{BBH} system.  We consider existing
   \ac{GW} measurements of $\chieff$, the best-measured combination of
   spin parameters, in the three likely binary black hole detections
-  GW150914, LVT151012, and GW151226, we show that the data already
+  GW150914, LVT151012, and GW151226.
+  \ilya{If binary black hole spin magnitudes extend to high values, as is
+suggested by observations of black hole X-ray binaries,} we show that the data already
   exhibit a $\OOneSigmaIsoAligned\sigma$ ($\OOneOddsIsoAligned$ odds
-  ratio) preference for an isotropic angular distribution amongst a
-  suite of models for the spin distribution.  By considering the
+  ratio) preference for an isotropic angular distribution.
+  By considering the
   effect of an additional 10 detections drawn from the various models
   in the suite we show that if all observations come from a single
   population such an augmented data set would enable at least a
   $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds
-  ratio) distinction between the isotropic and aligned models, and in
+  ratio) distinction between the isotropic and aligned models \ilya{for the assumed spin magnitude distributions}, and in
   most cases better than $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).
-  The existing preference for a dynamical formation scenario for the
-  observed systems will be confirmed (or overturned) confidently in
-  the near future by subsequent observations.
+  The existing preference for \ilya{either an isotropic spin distribution or low spin magntiudes} for the observed systems will be confirmed (or overturned) confidently in the near future by subsequent observations.
 \end{abstract}
 
 \acresetall{}
@@ -308,74 +310,39 @@ distributions.
 Most of our resolving power for the spin angular distribution is a
 result of the fact that our ``aligned'' models cannot produce
 $\chieff < 0$ (see Figure \ref{fig:chieff-distribution-models}).  If
-spins are intrinsically very small, with $a \lesssim 0.1$ always, then
+spins are intrinsically very small, with $a \lesssim \ilya{0.3}$, \ilya{[I changed the number to be consistent with Simon's analysis, which shows that you can no longer tell the difference for a mean spin of $\sim 0.17$]} then
 it is no longer possible to resolve the negative spin with a small
 number of observations.  As noted below, however, spins observed in
-X-ray binaries are typically large, and most models of isolated binary
-evolution do not produce systems with spins uniformly bounded to small
-values.  Additionally, models which do not permit \emph{some} spins
-with $\chieff \gtrsim 0.2$ are ruled out by the GW151226 observations
-\citep{2016PhRvL.116x1103A}.
-
-\citet{2017CQGra..34cLT01V} also studied the possibility of
-distinguishing aligned and isotropic angular distributions of \ac{BBH}
-spins, but concluded that several hundred sources would be required to
-adequately separate the models.  The ``aligned'' population in that
-study permitted spins nearly parallel or anti-parallel to the orbital
-axis, i.e.\ $\hat{S}\cdot \hat{L} \simeq \pm 1$, in contrast to our
-aligned models; thus the aligned/isotropic discriminating power in
-\citet{2017CQGra..34cLT01V} relies effectively on measurements of the
-detailed shape of the $\chieff$ distribution and, as noted above,
-measurements are not very sensitive to the spin magnitude distribution
-that controls the shape of $\chieff$.  Note that anti-parallel spins
-are strongly disfavoured in models of isolated binary evolution (see,
-for example, \citet{Kalogera:2000}).
+X-ray binaries are typically large. 
+\sout{and most models of isolated binary evolution do not produce systems with spins uniformly bounded to small values}.  
+Additionally, models which do not permit \emph{some} spins
+with $\chieff \gtrsim \ilya{0.1}$ \ilya{[Changed to be consistent with 90\% lower bound from cited paper]} are ruled out by the GW151226 observations
+\citep{2016PhRvL.116x1103A}.  
 
 In order to perform our analysis we need to select models for the
-distribution of the dimensionless spin parameters of stellar-mass
+distribution of the \ilya{spin magnitudes} of stellar-mass
 black holes.  Observational data for such model selection is sparse.
 \citet{2015PhR...548....1M} give current estimates of the spin
 parameters for stellar-mass black holes, obtained using disk
 reflection and/or disk continuum methods.  Most of the systems studied
-are low-mass X-ray binaries (i.e., the donor star has a mass
-$M_{\rm donor}<1~M_\odot$) rather than the high-mass X-ray binaries
+are low-mass X-ray binaries rather than the high-mass X-ray binaries
 that are likely to be the progenitors of double black hole binaries.
 In addition, there are substantial systematic errors that can
 complicate either type of analysis (see \citealt{2015PhR...548....1M}
-for a discussion). Nonetheless, if we take the reported spin
+for a discussion), \ilya{and observational selection effects could yield a biased distribution}. Nonetheless, if we take the reported spin
 magnitudes as representative then we find that there is a preference
 for high spins; for example, 14 of the 19 systems with reported spins
-have spin parameters in excess of 0.5.  The masses and spin parameters
+have dimensionless spin parameters in excess of 0.5.  \ilya{It is usually argued that} the masses and spin parameters
 of stellar-mass black holes are unlikely to be altered significantly
-by accretion (low-mass donors simply do not have enough mass and
+by accretion (low-mass donors may not have enough mass and
 high-mass donors have a very short phase in which they transfer mass;
 a variant of this long-standing argument was presented by
-\citet{1999MNRAS.305..654K}).  Thus the current spin parameters
-probably are close to their values upon core collapse; however, the
-specific processes involved in the production of black hole binaries
-could alter the spin distribution of those holes.  For example, close
+\citet{1999MNRAS.305..654K}), \ilya{but see \citet{Podsiadlowski:2003,FragosMcClintock:2015}}.  Thus the current spin parameters
+probably are close to their values upon core collapse.  However, the
+specific processes involved in the production of black hole binaries \ilya{from isolated binaries}
+could alter the spin \ilya{magnitude} distribution of those holes \ilya{relative to the X-ray binary systems}; for example, close
 tidal interactions could spin up the core, or stripping of the
-envelope could reduce the available angular momentum.
-
-Although BH spin-orbit alignment is assumed in continuum flux
-measurements \citep{2015PhR...548....1M}, some BH XRBs, including GRO
-J1655-40 \citep{Martin:2008}, 4U 1543-47
-\citep{MorningstarMiller:2014} and particularly V4641 Sgr
-\citep{Orosz:2001,Martin:2008b} appear to indicate that the micro
-quasar jet, presumably aligned with the BH spin axis, is misaligned
-with the orbit.  Moreover, initial stellar spins in massive binaries
-have been observed to be misaligned
-\citep[e.g.,][]{Albrecht:2009,2014ApJ...785...83A}, though there are
-opportunities for realignment during binary evolution, as described
-below.
-
-There are a few modelling constrains on the predicted spin
-distribution (see, for example, \citep{2016ApJ...818L..22A}).  We
-separate these into a discussion of spin magnitudes and spin
-directions (spin-orbit misalignment angles) as in the preceding
-analysis; however, it is worth pointing out that, contrary to our
-simplified assumptions, the magnitude and direction distributions may
-well be coupled.
+envelope could reduce the available angular momentum \citep{2016MNRAS.462..844K,Zaldarriaga:2017,HotokezakaPiran:2017}.  
 
 The spin directions of binary black holes formed dynamically through
 interactions in dense stellar environments
@@ -385,72 +352,21 @@ direction \citep[e.g.,][]{2016ApJ...832L...2R} and the persistence of
 an isotropic distribution through post-Newtonian evolution
 \citep{2004PhRvD..70l4020S,2007ApJ...661L.147B}.
 
-Chemically homogeneous evolution is a possible BBH formation channel
-specific to rapidly spinning massive stars aligned by tidal effects
-\citep{MandeldeMink:2016,Marchant:2016}.  However, wind-driven
-mass loss can spin down even some of these stars to the point that
-values of $\chi_\textrm{eff}$ as low as $\sim 0.2$ are possible,
-though alignment should be preserved \citep{Marchant:2016}.
+\ilya{The spin directions in isolated binaries, whether evolving via the classical channel through a common-envelope phase \citep{TutukovYungelson:1973,TutukovYungelson:1993,Lipunov:1997,2016Natur.534..512B,Stevenson:2017} or through chemically homogeneous evolution \citep{MandeldeMink:2016,Marchant:2016} are generally expected to be preferentially aligned.  Despite  observed spin misalignments in both massive stellar binaries \citep{Albrecht:2009,2014ApJ...785...83A} and BH XRBs \citep{Orosz:2001,Martin:2008b,Martin:2008,MorningstarMiller:2014}, mass accretion and tidal interactions will tend to realign the binary.  On the other hand, a supernova natal kick (if any) can change the orbital plane and misalign the binary \citep{2000ApJ...541..319K,2013PhRvD..87j4028G}; the supernova can also tilt the spin angle, as in the double pulsar J0737-3039 \citep{2011ApJ...742...81F}; and a variety of uncertain processes, such as wind-driven mass loss and post-collapse fallback, can couple the spin magnitude and direction distributions, contrary to our simplified assumptions.}
 
-The classical isolated binary evolution channel \citep{TutukovYungelson:1973,TutukovYungelson:1993,Lipunov:1997,Dominik:2015} through the
-common-envelope (CE) phase \citep{Ivanova:2013} 
-yields the following typical formation channel for
-binary black holes: possible mass transfer from the primary to the
-secondary; the collapse of the primary into a BH; the formation and
-ejection of a CE as a consequence of dynamically unstable mass
-transfer from the secondary to the primary; possible further mass
-transfer from remaining secondary core to primary; collapse of the
-secondary into a BH; a merger induced by GW emission
-\citep[e.g.,][]{2016Natur.534..512B,Stevenson:2017}.  Interaction
-before the collapse of the primary could realign the binary, but the
-primary's spin in the wide (separation $\gtrsim 10$ AU) binary can
-easily be misaligned by even moderate \citep{Mandel:2015kicks}
-natal kicks.  Realignment of the primary through subsequent mass
-accretion is unlikely given the small amount of accreted mass, except
-perhaps during hyper-critical accretion during CE \citep{2005ApJ...632.1035O}, though even this accretion is likely to be small according to recent results \citep{MacLeodRamirezRuiz:2015}; realignment through dissipation in the possibly warped
-accretion disk \citep{1975ApJ...195L..65B} is possible, but calculations
-suggest it is unlikely for stellar-mass binaries \citep{KLOP}.
+\ilya{\citet{2017CQGra..34cLT01V} also studied the possibility of distinguishing aligned and isotropic angular distributions of \ac{BBH} spins, but concluded that several hundred sources would be required to adequately separate models which included both parallel and anti-parallel spins for 'aligned' population.  In contrast, and in agreement with the present study, \citet{Stevenson:2017spin} found that only $\sim 5$ observations of rapidly spinning black holes would be necessary to distinguish isotropic and aligned spin distributions, though tens of detections would be required for more nuanced admixture models.  Meanwhile, recent studies by \citet{Fishbach:2017,Gerosa:2017} focused on inference on spin magnitudes.}
 
-The secondary should tidally align with the orbit before the onset of
-mass transfer
-\citep[e.g.,][]{2000ApJ...541..319K,2013PhRvD..87j4028G}; however,
-most of its angular momentum would be lost to the envelope, which will
-be ejected during the CE phase.  The remnant core may or may not be
-efficiently re-aligned, depending on the separation between the
-secondary's core and the BH immediately after the CE is ejected
-\citep{2016MNRAS.462..844K}.  The secondary's natal kick will be small
-relative to the orbital velocity of the close post-CE binary, so any
-further kick-induced misalignment will be moderate
-\citep{2016ApJ...832L...2R}.
+\ilya{In summary}, the angular distribution of spins in \acp{BBH} formed through isolated binary evolution is uncertain; nevertheless, it is more probable that spins are \ilya{preferentially} aligned \sout{and non-zero} after evolution through this channel than not, while an isotropic distribution of \sout{non-zero} spins is the natural outcome of dynamical formation processes.  \ilya{Therefore, if the current observational trend for low $\chieff$ continues with future gravitational-wave observations, it will be possible to either confirm that \ac{BH} spins are sometimes large in magnitude and isotropic in direction, yielding a strong indication of a dynamical formation origin; or that \ac{BH} spins are overwhelmingly small in magnitude, yielding a notable contradiction with the claimed X-ray binary spin measurements, particularly those for high-mass X-ray binaries.}
 
-The analysis above assumed the conservation of angular momentum during
-core collapse. However, we know that this may not always be the case.
-For example, the magnitude of the angular momentum cannot possibly be
-conserved during the collapse to a BH if the pre-collapse
-dimensionless spin exceeds $1$.  The direction of the angular momentum
-may also change; for example, the misalignment of the secondary pulsar
-in the double pulsar J0737-3039 by $\sim 135^{\circ}$ relative to
-the orbit in the apparent absence of a kick indicated that, at least
-for slowly spinning objects, a spin tilt during a supernova may be
-possible \citep{2011ApJ...742...81F}.  The dependence of the magnitude
-and direction of the spin on its pre-collapse values depends on the
-stellar structure (i.e., the level of angular momentum coupling
-between the collapsing and ejected material), the supernova explosion
-(if any), and the details of the post-collapse fallback process.
+%\citet{2017CQGra..34cLT01V} also studied the possibility of distinguishing aligned and isotropic angular distributions of \ac{BBH} spins, but concluded that several hundred sources would be required to adequately separate the models.  The ``aligned'' population in that study permitted spins nearly parallel or anti-parallel to the orbital axis, i.e.\ $\hat{S}\cdot \hat{L} \simeq \pm 1$, in contrast to our aligned models; thus the aligned/isotropic discriminating power in \citet{2017CQGra..34cLT01V} relies effectively on measurements of the detailed shape of the $\chieff$ distribution and, as noted above, measurements are not very sensitive to the spin magnitude distribution that controls the shape of $\chieff$.  Note that anti-parallel spins are strongly disfavoured in models of isolated binary evolution (see, for example, \citet{Kalogera:2000}).
 
-In short, the angular distribution of spins in \acp{BBH} formed
-through isolated binary evolution is uncertain; nevertheless, it is
-more probable that spins are aligned and non-zero after evolution
-through this channel than not, while an isotropic distribution of
-non-zero spins is the natural outcome of dynamical formation
-processes.
 
 \acknowledgements
 
-We thank Richard O’Shaughnessy and Christopher Berry for discussions
-comments on this work.  MCM acknowledges support of the University of
+We thank Richard O'Shaughnessy and Christopher Berry for discussions and
+comments on this work.  WF, SS, IM and AV were supported in part by the STFC.  MCM acknowledges support of the University of
 Birmingham Institute for Advanced Study Distinguished Visiting Fellows
-program.
+program.   SS and IM acknowledge support from the National Science Foundation under Grant No. NSF PHY11-25915.
 
 \appendix
 
@@ -461,7 +377,9 @@ program.
 %Rate uncertainties for both of these formation scenarios are large enough that we do not know a priori which will dominate the LIGO detection rate. In the previous section we have shown that a model with isotropic spin directions and 'decreasing' spin magnitudes is favoured by the data.
 %
 %In this section we assume that the true distribution of BBH spin-orbit misalignments observed by LIGO is a mixture of binaries formed through isolated binary evolution (with aligned spins) and dynamical formation (with isotropic spins). 
+\sout{As discussed above, BBHs can form as the end point of isolated binary evolution or dynamically in dense stellar environments. The spin misalignments of BBHs is a signature of their formation mechanism; binaries formed through isolated binary evolution are expected to have their spins aligned with the orbital angular momentum, whilst those formed dynamically are expected to have an isotropic distribution.}
 
+\sout{Rate uncertainties for both of these formation scenarios are large enough that we do not know a priori which will dominate the LIGO detection rate. In the previous section we have shown that a model with isotropic spin directions and 'decreasing' spin magnitudes is favoured by the data.}
 
 In this section we assume that the true distribution of
 \acp{BBH} observed by LIGO is a mixture of binaries formed
@@ -470,6 +388,9 @@ dynamical formation (with isotropic spins). Rate uncertainties
 for both of these formation scenarios are large enough that we
 do not know a priori which will dominate the LIGO detection
 rate.
+\ilya{While we carried out Bayesian comparisons between isotropic and aligned spin distributions under various assumptions, a preference for one of the considered models over the others does not necessarily indicate that it is the correct model.  All of the considered models could be inaccurate for the actual distribution, especially since all of the considered models are based on a number of additional assumptions, such as decoupled spin magnitude and spin misalignment angle distributions and identical distributions for primary and secondary spins.}
+\ilya{We now partly relax the simplified assumptions made earlier by considering the possibility that the} true distribution of BBH spin-orbit misalignments observed by LIGO is a mixture of binaries \ilya{with aligned spins and binaries with isotropic spins}. 
+\sout{formed through isolated binary evolution (with aligned spins) and dynamical formation (with isotropic spins).}
 
 %
 \begin{figure}
@@ -504,8 +425,13 @@ $f_i$ peaks at 1.}
 %
 
 Following \citet{Stevenson:2017spin},  we fit a mixture model (labelled model 'M' in Figure~\ref{fig:O1-odds}) where a fraction $f_i$ of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the ``flat'', ``high'' and ``low'' distributions (Equation~\ref{eq:magnitude-dists}), assuming all BHs have their spin magnitude drawn from the same distribution for both the aligned and isotropic populations. We calculate and plot the posterior on $f_i$ given by Equation~\ref{eq:hierarchical-posterior} ($f_i=\lambda$ in the derivation) in Figure~\ref{fig:mixture_fraction_posterior}. 
+We fit a mixture model (labelled model 'M') where a fraction $f_i$ ($f_i=\lambda$ in the derivations above) of BBHs have spins drawn from an isotropic distribution, whilst a fraction $1 - f_i$ have their spins aligned with the orbital angular momentum. We assume a flat prior on the fraction $f_i$. To test the robustness of our result, we vary the distribution we assume for BH spin magnitude distributions as with the aligned and isotropic models. We use the `uniform', `increasing' and `decreasing' distributions introduced in Section X, assuming all BHs have their spin magnitude drawn from the same distribution. We calculate the posterior given by Equation \ref{eq:magnitude-dists} plot the posterior distribution/cumulative posterior in Figure~\ref{fig:mixture_fraction_posterior}. We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the `decreasing', `uniform' and `increasing' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1.
+Thus, \ilya{for these spin magnitude distributions} 
+\sout{irrespective of our ignorance of the BH spin magnitude distribution}
+we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. 
 
 We find the mean fraction of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78 assuming the ``low'', ``flat'' and ``high'' distributions for spin magnitudes respectively, compared to the prior mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the prior of 0.1. In all cases, the posterior peaks at $f_i = 1$. Thus, for a range of assumptions regarding the the BH spin magnitude distribution, we find that the current O1 LIGO observations constrain the majority of BBHs to have their spins drawn from an isotropic distribution. 
+\sout{If we assume that the subpopulation of BBHs with isotropically distributed spin orientations corresponds to a subpopulation of dynamically formed BBHs, our result suggests that the majority of merging BBHs observed by LIGO are formed dynamically, rather than through isolated binary evolution.}
 
 The evidence ratios of these models to the isotropic distribution with ``flat'' spin magnitudes are 0.85, 0.39 and 0.19 for the ``low'', ``flat'' and ``high'' spin magnitude models. Thus we cannot rule out a mixture with the current data. 
 
@@ -592,7 +518,7 @@ $\sim 3$ to the overall odds.  After ten additional events, then, the
 odds ratio becomes $5 \times 3^{10} \simeq 3 \times 10^{5}$, or
 $4.6 \sigma$, consistent with the results of the more detailed
 calculation described above.  If the true distribution of spins
-becomesf half as wide ($\chieff \in [-0.125, 0.125]$ for isotropic and
+becomes half as wide ($\chieff \in [-0.125, 0.125]$ for isotropic and
 $\chieff \in [0, 0.25]$ for aligned spins), with the same
 uncertainties, then the existing odds ratio becomes $1.08$, and each
 subsequent event drawn from the isotropic distribution contributes on
@@ -627,7 +553,7 @@ differences between the different magnitude distributions.
   \label{fig:mass-ratio-sensitivity}
 \end{figure}
 
-\section{Approximaions in the Gravitational Waveform}
+\section{Approximations in the Gravitational Waveform}
 The model waveforms used to infer the $\chieff$ of the three events
 incorporate approximations to the true behaviour of the merging
 systems that are expected to break down for sufficiently high
@@ -644,7 +570,7 @@ source is edge-on or with high spin.  The other two events discussed
 in this paper are at much lower SNR, with correspondingly larger
 statistical uncertainties, and are probably similarly oriented and
 with similarly small spins, so we do not expect systematic
-uncertanties to dominate.  
+uncertainties to dominate.  
 
 Given the preference of our data for a smaller spin population we
 assume here that measurements made in the future are not dominated by
