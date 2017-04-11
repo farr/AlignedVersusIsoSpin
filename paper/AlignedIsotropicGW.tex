@@ -70,12 +70,12 @@
   School of Physics and Astronomy, University of Birmingham,
   Birmingham, B15 2TT, United Kingdom}
 
-\email{w.farr@bham.ac.uk,simons@star.sr.bham.ac.uk,miller@astro.umd.edu,imandel@star.sr.bham.ac.uk,av@star.sr.bham.ac.uk}
+\email{w.farr@bham.ac.uk, simons@star.sr.bham.ac.uk, miller@astro.umd.edu,\\imandel@star.sr.bham.ac.uk, av@star.sr.bham.ac.uk}
 
 \begin{abstract}
   The first direct detections of \acp{GW} from merging \acp{BBH} open
-  a unique window into the formation environment of massive stars and
-  their compact remnants.  One promising signature of the formation
+  a unique window into the \ilya{\ac{BBH}} formation environment.  \sout{of massive stars and
+  their compact remnants}  One promising signature of the formation
   environment is the angular distribution of the \ac{BH} spins;
   systems formed through dynamical interactions among already-compact
   objects are expected to have isotropic spin orientations whereas
@@ -91,7 +91,7 @@
   ($\OOneOddsIsoAligned$ odds ratio\footnote{An odds ratio of $r$ with
     $r \ll 1$ is equivalent to $x \sigma$ with
     $x = \Phi^{-1}\left( 1 - r \right)$, where $\Phi$ is the unit
-    normal CDF.})  preference for an isotropic angular distribution.
+    normal CDF. \ilya{[Two-tailed vs.~one-tailed]}})  preference for an isotropic angular distribution.
   By considering the effect of an additional 10 detections drawn from
   the various models in the suite we show that if all observations
   come from a single population such an augmented data set would
@@ -122,13 +122,13 @@ correspondingly tight constraint from the data, is a mass-weighted,
 aligned, ``effective spin,''
 \begin{equation}
   \chieff = \frac{c}{GM} \left( \frac{\vec{S}_1}{m_1} + \frac{\vec{S}_2}{m_2}
-  \right) \cdot \frac{\vec{L}}{\left| \vec{L} \right|} = \frac{1}{M} \left( m_1 \chi_1 + m_2 \chi_2 \right),
+  \right) \cdot \frac{\vec{L}}{\left| \vec{L} \right|} \ilya{\equiv} \frac{1}{M} \left( m_1 \chi_1 + m_2 \chi_2 \right),
 \end{equation}
-where the $\hat{z}$ axis is aligned with the orbital angular momentum
-of the binary, $m_{1,2}$ are the gravitational masses of the more-massive (1) and
+where \sout{the $\hat{z}$ axis is aligned with the orbital angular momentum
+of the binary,} $m_{1,2}$ are the gravitational masses of the more-massive (1) and
 less-massive (2) components, $M = m_1 + m_2$ is the total mass,
 $\vec{S}_{1,2}$ are the spin angular momentum vectors of the black
-holes in the binary, $\vec{L}$ is the orbital angular momentum vector,
+holes in the binary, $\vec{L}$ is the orbital angular momentum vector \ilya{assumed to point in the $\hat{z}$ direction},
 and $0 \leq \chi_{1,2} \leq 1$ are the corresponding dimensionless
 projections of the individual \ac{BH} spins
 \citep{2016PhRvL.116x1102A}.
@@ -142,7 +142,7 @@ distribution with the same mean and 90\% credible interval as quoted
 in \citet{O1-BBH}.  There is essentially no posterior support for
 $\chi \gtrsim 0.5$ as inferred for the majority of the
 electromagnetically-detected stellar-mass black hole population (see
-Section \ref{sec:discussion}).  The analysis here is relatively
+Section \ref{sec:discussion}).   \ilya{[Figure 1 shows an absence of support for $\chieff \gtrsim 0.5$.  It does not directly say anything about $\chi$.  In fact, Figure 3 makes it quite clear that $\chi$ can have support beyond 0.5 as long as spins are isotropic.  Meanwhile, the EM observations describe $\chi$, not $\chieff$, since only one component is a BH in those X-ray binaries.  In a way, this whole paper is about the difference between $\chi$ and $\chieff$ (depending on the mis-alignment angles), so conflating them here and in the caption of Figure 1 is very confusing.]}   The analysis here is relatively
 insensitive to the precise details of the posterior distributions;
 other conclusions are more sensitive.  In particular, our Gaussian
 approximation does permit $\chieff = 0$ for GW151226 while the true
@@ -158,13 +158,13 @@ posterior rules this out at high confidence
     reported in \citet{O1-BBH}.  It is notable that none of the
     $\chieff$ posteriors extends to the high spin magnitudes inferred
     from several electromagnetically-detected stellar-mass black hole
-    systems (see \citet{2015PhR...548....1M} for a summary of such
+    systems \ilya{[Again, $\chi$ and $\chieff$ are being conflated; see comment on 2nd paragraph of intro.]} (see \citet{2015PhR...548....1M} for a summary of such
     measurements).}
 \end{figure}
 
 Small values of $\chieff$ as exhibited in these systems can result
 from either intrinsically small spins or larger spins whose direction
-is mis-aligned with the orbital plane of the binary (i.e.\ spin
+is mis-aligned with the orbital \sout{plane} \ilya{angular momentum} of the binary (i.e.\ spin
 vectors with small $z$-components).  Mis-alignment is capable of
 producing \emph{negative} values of $\chieff$, however, whereas aligned
 spins will always have $\chieff \geq 0$.  This difference provides
@@ -182,16 +182,16 @@ consistent with the three observations \citep{O1-BBH}, and the
 $\chieff$ distribution is not particularly sensitive to the mass ratio
 between the merging objects---see Section \ref{sec:mass-ratio}).  We
 assume that the population spin distribution factorises into a
-distribution for the spin magnitude $a$ and a distribution for the
+distribution for the spin magnitude \ilya{$\chi$} and a distribution for the
 spin angles.  Finally, we assume that the distribution of spins is
 common to each component in a merging binary.  Choosing one of three
 magnitude distributions
 \begin{equation}
   \label{eq:magnitude-dists}
-  p(a) = \begin{cases}
-    2\left(1-a\right) & \textnormal{``low''} \\
+  p(\ilya{\chi}) = \begin{cases}
+    2\left(1-\chi \right) & \textnormal{``low''} \\
     1 & \textnormal{``flat''} \\
-    2 a & \textnormal{``high''}
+    2 \chi & \textnormal{``high''}
   \end{cases},
 \end{equation}
 and pairing with either an isotropic angular distribution or a
@@ -273,19 +273,19 @@ magnitude $\geq 0.2$ at 90\% credibility \citep{2016PhRvL.116x1103A}.
 
 Estimates of the rate of \ac{BBH} coalescences give a reasonable
 chance of 10 additional \ac{BBH} detections in the next two years
-\citep{O1-BBH,2016ApJ...833L...1A,2016ApJS..227...14A}.  Assuming an
-additional 10 detections with similar observational uncertainties
+\citep{O1-BBH,2016ApJ...833L...1A,2016ApJS..227...14A}.  Assuming \ilya{10} \sout{an}
+additional \sout{10} detections with similar observational uncertainties
 drawn from each of our six zero-parameter models for the spin
 distribution in addition to the three existing detections from O1, we
 find the odds ratios shown in Figure \ref{fig:O2-predictions}.  We
 find that most scenarios with an additional 10 detections allow the
-correct angular distribution to be distinguished with greater than
+\sout{correct} \ilya{simulated} angular distribution to be \sout{distinguished} \ilya{inferred} with greater than
 $5\sigma$ ($2.9 \times 10^{-7}$ odds) credibility; and in the most
 pessimistic case the distinction is typically
 $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
 While such future detections should permit a confident distinction
-between \emph{angular} distributions, we will remain much less certain
-about the \emph{magnitude} distribution until we have a larger number
+between \emph{angular} distributions, we would remain much less certain
+about the \emph{magnitude} distribution \ilya{among the three options considered here} until we have a larger number
 of observations.  In Figure \ref{fig:O2-predictions}, the odds ratio
 between different magnitude distributions with the same angular
 distribution is much closer to unity than the odds ratio between angular
