@@ -138,22 +138,15 @@ GW150914, GW151226 and LVT151012 from \citet{O1-BBH}.  Because samples
 drawn from the posterior on $\chieff$ are not publicly released at
 this time, we have approximated the posterior as a Gaussian
 distribution with the same mean and 90\% credible interval as quoted
-in \citet{O1-BBH}.  There is essentially no posterior support for
-$\chi \gtrsim 0.5$ as inferred for the majority of the
+in \citet{O1-BBH}.  Since all three mergers involve black holes of
+comparable masses, there is essentially no posterior support for both
+black holes' $\chi \gtrsim 0.5$, in contrast to the majority of the
 electromagnetically-detected stellar-mass black hole population (see
-Section \ref{sec:discussion}).  \ilya{[Figure 1 shows an absence of
-  support for $\chieff \gtrsim 0.5$.  It does not directly say
-  anything about $\chi$.  In fact, Figure 3 makes it quite clear that
-  $\chi$ can have support beyond 0.5 as long as spins are isotropic.
-  Meanwhile, the EM observations describe $\chi$, not $\chieff$, since
-  only one component is a BH in those X-ray binaries.  In a way, this
-  whole paper is about the difference between $\chi$ and $\chieff$
-  (depending on the mis-alignment angles), so conflating them here and
-  in the caption of Figure 1 is very confusing.]}  The analysis here
-is relatively insensitive to the precise details of the posterior
-distributions; other conclusions are more sensitive.  In particular,
-our Gaussian approximation does permit $\chieff = 0$ for GW151226
-while the true posterior rules this out at high confidence
+Section \ref{sec:discussion}).  The analysis here is relatively
+insensitive to the precise details of the posterior distributions;
+other conclusions are more sensitive.  In particular, our Gaussian
+approximation does permit $\chieff = 0$ for GW151226 while the true
+posterior rules this out at high confidence
 \citep{2016PhRvL.116x1103A,O1-BBH}.
 
 \begin{figure}
@@ -163,25 +156,26 @@ while the true posterior rules this out at high confidence
     approximate the posteriors reported in \citet{O1-BBH} using
     Gaussians with the same median and 90\% credible interval as
     reported in \citet{O1-BBH}.  It is notable that none of the
-    $\chieff$ posteriors extends to the high spin magnitudes inferred
-    from several electromagnetically-detected stellar-mass black hole
-    systems \ilya{[Again, $\chi$ and $\chieff$ are being conflated; see comment on 2nd paragraph of intro.]} (see \citet{2015PhR...548....1M} for a summary of such
-    measurements).}
+    $\chieff$ posteriors extends to the regime of high spin magnitudes
+    inferred from several electromagnetically-detected stellar-mass
+    black hole systems (see \citet{2015PhR...548....1M} for a summary
+    of such measurements).}
 \end{figure}
 
 Small values of $\chieff$ as exhibited in these systems can result
 from either intrinsically small spins or larger spins whose direction
-is mis-aligned with the orbital \sout{plane} \ilya{angular momentum} of the binary (i.e.\ spin
-vectors with small $z$-components).  Mis-alignment is capable of
-producing \emph{negative} values of $\chieff$, however, whereas aligned
-spins will always have $\chieff \geq 0$.  This difference provides
-strong discriminating power between the two angular distributions,
-even without good information about the magnitude distribution; to the
-extent that data favour negative $\chieff$ they weigh heavily against
-aligned models.  To quantify the degree of support for these two
-alternate explanations of small $\chieff$ values in the merging
-\ac{BBH} population, we compared the Bayesian evidence for various
-simple models of the spin population using the \ac{GW} data set.
+is mis-aligned with the orbital angular momentum of the binary (i.e.\
+spin vectors with small $z$-components).  Mis-alignment is capable of
+producing \emph{negative} values of $\chieff$, however, whereas
+aligned spins will always have $\chieff \geq 0$.  This difference
+provides strong discriminating power between the two angular
+distributions, even without good information about the magnitude
+distribution; to the extent that data favour negative $\chieff$ they
+weigh heavily against aligned models.  To quantify the degree of
+support for these two alternate explanations of small $\chieff$ values
+in the merging \ac{BBH} population, we compared the Bayesian evidence
+for various simple models of the spin population using the \ac{GW}
+data set.
 
 Each of our models for the merging \ac{BBH} spin population assumes
 that the merging black holes are of equal mass (this is marginally
@@ -189,16 +183,16 @@ consistent with the three observations \citep{O1-BBH}, and the
 $\chieff$ distribution is not particularly sensitive to the mass ratio
 between the merging objects---see Section \ref{sec:mass-ratio}).  We
 assume that the population spin distribution factorises into a
-distribution for the spin magnitude \ilya{$\chi$} and a distribution for the
+distribution for the spin magnitude $a$ and a distribution for the
 spin angles.  Finally, we assume that the distribution of spins is
 common to each component in a merging binary.  Choosing one of three
 magnitude distributions
 \begin{equation}
   \label{eq:magnitude-dists}
-  p(\ilya{\chi}) = \begin{cases}
-    2\left(1-\chi \right) & \textnormal{``low''} \\
+  p(a) = \begin{cases}
+    2\left(1-a \right) & \textnormal{``low''} \\
     1 & \textnormal{``flat''} \\
-    2 \chi & \textnormal{``high''}
+    2 a & \textnormal{``high''}
   \end{cases},
 \end{equation}
 and pairing with either an isotropic angular distribution or a
@@ -228,7 +222,7 @@ The distributions in Eq.\ \eqref{eq:magnitude-dists} are not meant to
 represent any particular physical model, but rather to capture our
 uncertainty about the spin magnitude distribution, discussed in detail
 in Section \ref{sec:discussion}; neither observations nor population
-synthesis codes can at this point authoritatively suggest {\it any}
+synthesis codes can at this point authoritatively suggest \emph{any}
 particular spin distribution \citep{2015PhR...548....1M}.  Our models,
 however, allow us to see how sensitive the $\chieff$ distribution is
 to spin alignment given uncertainties about the spin magnitudes.
@@ -280,23 +274,25 @@ magnitude $\geq 0.2$ at 90\% credibility \citep{2016PhRvL.116x1103A}.
 
 Estimates of the rate of \ac{BBH} coalescences give a reasonable
 chance of 10 additional \ac{BBH} detections in the next two years
-\citep{O1-BBH,2016ApJ...833L...1A,2016ApJS..227...14A}.  Assuming \ilya{10} \sout{an}
-additional \sout{10} detections with similar observational uncertainties \ilya{[I think it would be useful to specify (in an appendix?) what model we use for the observational uncertainty on $\chieff$.]}
+\citep{O1-BBH,2016ApJ...833L...1A,2016ApJS..227...14A}.  Assuming 10
+additional detections with similar observational uncertainties
+\ilya{[I think it would be useful to specify (in an appendix?) what
+  model we use for the observational uncertainty on $\chieff$.]}
 drawn from each of our six zero-parameter models for the spin
 distribution in addition to the three existing detections from O1, we
 find the odds ratios shown in Figure \ref{fig:O2-predictions}.  We
 find that most scenarios with an additional 10 detections allow the
-\sout{correct} \ilya{simulated} angular distribution to be \sout{distinguished} \ilya{inferred} with greater than
+simulated angular distribution to be inferred with greater than
 $5\sigma$ ($2.9 \times 10^{-7}$ odds) credibility; and in the most
 pessimistic case the distinction is typically
 $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
 While such future detections should permit a confident distinction
-between \emph{angular} distributions, we would remain much less certain
-about the \emph{magnitude} distribution \ilya{among the three options considered here} until we have a larger number
-of observations.  In Figure \ref{fig:O2-predictions}, the odds ratio
-between different magnitude distributions with the same angular
-distribution is much closer to unity than the odds ratio between angular
-distributions.
+between \emph{angular} distributions, we would remain much less
+certain about the \emph{magnitude} distribution among the three
+options considered here until we have a larger number of observations.
+In Figure \ref{fig:O2-predictions}, the odds ratio between different
+magnitude distributions with the same angular distribution is much
+closer to unity than the odds ratio between angular distributions.
 
 \begin{figure}
   \plotone{../plots/six-way-O2-model-selection}
@@ -328,10 +324,10 @@ distributions.
 Most of our resolving power for the spin angular distribution is a
 result of the fact that our ``aligned'' models cannot produce
 $\chieff < 0$ (see Figure \ref{fig:chieff-distribution-models}).  If
-spins are intrinsically very small, with $\ilya{\chi} \lesssim 0.3$, then it is
-no longer possible to resolve the negative \ilya{effective} spin with a small number of
-observations.  As noted below, however, spins observed in X-ray
-binaries are typically large.  Additionally, models which do not
+spins are intrinsically very small, with $a \lesssim 0.3$, then it is
+no longer possible to resolve the negative effective spin with a small
+number of observations.  As noted below, however, spins observed in
+X-ray binaries are typically large.  Additionally, models which do not
 permit \emph{some} spins with $\chieff \gtrsim 0.1$ are ruled out by
 the GW151226 observations \citep{2016PhRvL.116x1103A}.
 
@@ -356,12 +352,13 @@ not have enough mass and high-mass donors have a very short phase in
 which they transfer mass; a variant of this long-standing argument was
 presented by \citet{1999MNRAS.305..654K}), but see
 \citet{2003MNRAS.341..385P,2015ApJ...800...17F}.  Thus the current
-spin parameters probably are close to their values upon core collapse, \ilya{at least in high-mass X-ray binaries}.
-However, the specific processes involved in the production of black
-hole binaries from isolated binaries could alter the spin magnitude
-distribution of those holes relative to the X-ray binary systems; for
-example, close tidal interactions could spin up the core, or stripping
-of the envelope could reduce the available angular momentum
+spin parameters probably are close to their values upon core collapse,
+at least in high-mass X-ray binaries.  However, the specific processes
+involved in the production of black hole binaries from isolated
+binaries could alter the spin magnitude distribution of those holes
+relative to the X-ray binary systems; for example, close tidal
+interactions could spin up the core, or stripping of the envelope
+could reduce the available angular momentum
 \citep{2016MNRAS.462..844K,2017arXiv170200885Z,2017arXiv170203952H}.
 
 The spin directions of binary black holes formed dynamically through
@@ -411,15 +408,12 @@ through this channel than not, while an isotropic distribution of
 spins is the natural outcome of dynamical formation processes.
 Therefore, if the current observational trend for low $\chieff$
 continues with future gravitational-wave observations, it will be
-possible to either confirm that \ac{BH} spins are isotropic in direction \ilya{and} sometimes large in
-magnitude, yielding a strong indication of
-a dynamical formation origin; or that \ac{BH} spins are overwhelmingly
-small in magnitude, yielding a notable contradiction with the claimed
-\ac{BH} X-ray binary spin measurements, particularly those for high-mass X-ray
-binaries.  
-
-%\citet{2017CQGra..34cLT01V} also studied the possibility of distinguishing aligned and isotropic angular distributions of \ac{BBH} spins, but concluded that several hundred sources would be required to adequately separate the models.  The ``aligned'' population in that study permitted spins nearly parallel or anti-parallel to the orbital axis, i.e.\ $\hat{S}\cdot \hat{L} \simeq \pm 1$, in contrast to our aligned models; thus the aligned/isotropic discriminating power in \citet{2017CQGra..34cLT01V} relies effectively on measurements of the detailed shape of the $\chieff$ distribution and, as noted above, measurements are not very sensitive to the spin magnitude distribution that controls the shape of $\chieff$.  Note that anti-parallel spins are strongly disfavoured in models of isolated binary evolution (see, for example, \citet{Kalogera:2000}).
-
+possible to either confirm that \ac{BH} spins are isotropic in
+direction and sometimes large in magnitude, yielding a strong
+indication of a dynamical formation origin; or that \ac{BH} spins are
+overwhelmingly small in magnitude, yielding a notable contradiction
+with the claimed \ac{BH} X-ray binary spin measurements, particularly
+those for high-mass X-ray binaries.
 
 \acknowledgements
 
@@ -561,17 +555,18 @@ isotropic and aligned models for each event is approximately
   \frac{P\left( -0.25 \leq \chieff \leq 0.25 \right)}{P\left( 0 \leq \chieff \leq 0.5 \right) },
 \end{equation}
 where $P\left( A \leq \chieff \leq B \right)$ is the posterior
-probability \ilya{[Should really be likelihood, not posterior, right?  You are approximating the first term in the product in (B1)...]} that $\chieff$ is between $A$ and $B$.  Using our
-approximations to the $\chieff$ posteriors described above, this gives
-an odds ratio of $5$ in favour of the isotropic models, which is about
-a factor of two smaller than the ratio in the more careful calculation
-described in Section \ref{sec:O1}.  This is a satisfactory answer at
-an order-of-magnitude level.
+probability (here used to approximate the likelihood) that $\chieff$
+is between $A$ and $B$.  Using our approximations to the $\chieff$
+posteriors described above, this gives an odds ratio of $5$ in favour
+of the isotropic models, which is about a factor of two smaller than
+the ratio in the more careful calculation described in Section
+\ref{sec:O1}.  This is a satisfactory answer at an order-of-magnitude
+level.
 
 If the true distribution is isotropic and follows this simple model,
 and our measurement uncertainties on $\chieff$ are $\simeq 0.1$, then
-each subsequent measurement contributes on average a factor of
-$\sim 3$ to the overall odds. \ilya{[This ranges from $\sim$1 to $\sim$50 (2.5 $\sigma$).  Not clear what an average of 3 means here (geometric mean, I hope?).  I am still not a huge fan of appendix B; it raises more questions than it answers, as far as I am concerned.]}  After ten additional events, then, the
+the geometric mean of each subsequent measurement's contribution to
+the overall odds is $\sim 3$.  After ten additional events, then, the
 odds ratio becomes $5 \times 3^{10} \simeq 3 \times 10^{5}$, or
 $4.6 \sigma$, consistent with the results of the more detailed
 calculation described above.  If the true distribution of spins
@@ -587,32 +582,48 @@ detail in Section \ref{sec:smallspins}.
 \section{Effect of small spin magnitudes}
 \label{sec:smallspins}
 
-In the main text we considered three models for BH spin magnitudes: ``low'', ``flat'' and ``high''. These were intended to capture some of the uncertainty regarding the BH spin magnitude distribution.
+In the main text we considered three models for BH spin magnitudes:
+``low'', ``flat'' and ``high''. These were intended to capture some of
+the uncertainty regarding the BH spin magnitude distribution.
 
 Here we extend the ``low'' model as:
 %
 \begin{equation}
-p(\chi) \propto (1 - \chi)^{\alpha}
+p(a) \propto (1 - a)^{\alpha}
 \label{eq:lowspinalpha}
 \end{equation}
 %
 
-When $\alpha = 0$, this recovers the ``flat'' distribution, whilst $\alpha = 1$
-recovers the ``low'' distribution. For higher values of $\alpha$, this distribution 
-becomes more peaked towards $\ilya{\chi} = 0$.
+When $\alpha = 0$, this recovers the ``flat'' distribution, whilst
+$\alpha = 1$ recovers the ``low'' distribution. For higher values of
+$\alpha$, this distribution becomes more peaked towards
+$a = 0$.
 
 %
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{../plots/sigma_v_alpha.png}
-\caption{\textbf{Effect of small spins on evidence ratio of aligned against isotropic models.} The blue line shows the evidence ratio (plotted as the equivalent sigma) between a model where all systems are aligned, versus one where all systems are from an isotropic distribution as a function of the power law $\alpha$ corresponding to Equation~\ref{eq:lowspinalpha}.  The top axis shows the mean spin magnitude $\ilya{\chi}$
- \sout{that the value of} \ilya{which this $\alpha$} corresponds to. We see that for mean spin magnitudes $\lesssim 0.2$ we find no evidence for either distribution over the other.  \ilya{[Change $\bar{a}$ to $\bar{\chi}$ on upper abscissa label.]}}
+\caption{\textbf{Effect of small spins on evidence ratio of aligned
+    against isotropic models.} The blue line shows the evidence ratio
+  (plotted as the equivalent sigma) between a model where all systems
+  are aligned, versus one where all systems are from an isotropic
+  distribution as a function of the power law $\alpha$ corresponding
+  to Equation~\ref{eq:lowspinalpha}.  The top axis shows the mean spin
+  magnitude $\bar{a}$ which this $\alpha$ corresponds to. We see that
+  for mean spin magnitudes $\lesssim 0.2$ we find no evidence for
+  either distribution over the other.}
 \label{fig:smallspinsalpha}
 \end{figure}
 %
 
-In Figure~\ref{fig:smallspinsalpha} we plot the evidence ratio of aligned to isotropic distributions (plotted as the equivalent sigma) with spin magnitudes given by this model with $\alpha$ in the range $0$ -- $6$. The top axis shows the mean spin magnitude
-that value of $\alpha$ corresponds to (\ilya{e.g.}, for the ``flat'' distribution $\alpha = 0$, the mean spin magnitude is 0.5). We see that if typical BH spins are $\lesssim 0.2$ we have no evidence for one model over the other.
+In Figure~\ref{fig:smallspinsalpha} we plot the evidence ratio of
+aligned to isotropic distributions (plotted as the equivalent sigma)
+with spin magnitudes given by this model with $\alpha$ in the range
+$0$ -- $6$. The top axis shows the mean spin magnitude that value of
+$\alpha$ corresponds to (e.g., for the ``flat'' distribution
+$\alpha = 0$, the mean spin magnitude is 0.5). We see that if typical
+BH spins are $\lesssim 0.2$ we have no evidence for one model over the
+other.
 
 \section{Mass Ratio}
 \label{sec:mass-ratio}
@@ -642,29 +653,27 @@ differences between the different magnitude distributions.
 \end{figure}
 
 \section{Approximations in the Gravitational Waveform}
-The model waveforms used to infer the $\chieff$ of the three LIGO events
-incorporate approximations to the true behaviour of the merging
+The model waveforms used to infer the $\chieff$ of the three LIGO
+events incorporate approximations to the true behaviour of the merging
 systems that are expected to break down for sufficiently high
-mis-aligned spins.  The effect of these approximations \ilya{on inference}  
-on the parameters describing
-GW150914 has been
-investigated in detail \citep{2016arXiv161107531T} \ilya{[Should be an Abbott et al. ref like the others?]}.  For this source, statistical
-uncertainties dominate over any waveform systematics.  Detailed
-comparisons with numerical relativity computations using no
-approximations to the dynamics \citep{2016PhRvD..94f4035A} also
-suggest that statistical uncertainties dominate the systematics for
-this system.  \citet{2016arXiv161107531T} suggests that systematics
-may dominate for signals with this large SNR ($\simeq 23$) when the
-source is edge-on or \ilya{has} high spins.  The other two events discussed
-in this paper are at much lower SNR, with correspondingly larger
-statistical uncertainties, and are probably similarly oriented and
-with similarly small spins, so we do not expect systematic
-uncertainties to dominate.  
+mis-aligned spins.  The effect of these approximations on inference on
+the parameters describing GW150914 has been investigated in detail
+\citep{2016arXiv161107531T} \ilya{[Should be an Abbott et al. ref like
+  the others?]}.  For this source, statistical uncertainties dominate
+over any waveform systematics.  Detailed comparisons with numerical
+relativity computations using no approximations to the dynamics
+\citep{2016PhRvD..94f4035A} also suggest that statistical
+uncertainties dominate the systematics for this system.
+\citet{2016arXiv161107531T} suggests that systematics may dominate for
+signals with this large SNR ($\simeq 23$) when the source is edge-on
+or has high spins.  The other two events discussed in this paper are
+at much lower SNR, with correspondingly larger statistical
+uncertainties, and are probably similarly oriented and with similarly
+small spins, so we do not expect systematic uncertainties to dominate.
 
-\sout{Given the preference of our data for a smaller spin population} We
-assume here that measurements made in the future are not dominated by
-systematic errors, but this assumption would need to be revisited for
-high-SNR, edge-on, or high-spin sources detected in the future.  \ilya{[I thought we argued that there is no strong preference for small spin magnitudes.  We should be consistent...]}
+We assume here that measurements made in the future are not dominated
+by systematic errors, but this assumption would need to be revisited
+for high-SNR, edge-on, or high-spin sources detected in the future.
 
 \bibliography{AlignedIsotropicGW}
 
