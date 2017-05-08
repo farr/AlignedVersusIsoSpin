@@ -295,7 +295,8 @@ Figure \ref{fig:O1-posteriors}\footnote{The measurement uncertainty in
   system, particularly on the mass ratio.  Our assumption about future
   observational uncertainties is appropriate if the parameters of the
   three detected events are representative of the parameters of future
-  detections.}, we find the odds ratios shown in Figure
+  detections. See Section \ref{sec:chi-eff-precision}
+for further discussion.}, we find the odds ratios shown in Figure
 \ref{fig:O2-predictions}.  We find that most scenarios with an
 additional 10 detections allow the simulated angular distribution to
 be inferred with greater than $5\sigma$ ($2.9 \times 10^{-7}$ odds)
@@ -706,6 +707,45 @@ small spins, so we do not expect systematic uncertainties to dominate.
 We assume here that measurements made in the future are not dominated
 by systematic errors, but this assumption would need to be revisited
 for high-SNR, edge-on, or high-spin sources detected in the future.
+
+\section{Precision of $\chieff$ measurements}
+\label{sec:chi-eff-precision}
+Throughout this work we have made the simplifying assumption that the
+precision to which $\chieff$ can be constrained for individual binaries
+is independent of the binary's properties.  In practice, our ability to
+constrain $\chieff$ \emph{is} dependent on the system's properties, in
+particular its true $\chieff$ and mass ratio, which we illustrate in
+figure \ref{fig:chi-eff-constraints}.
+
+For this figure a detected population\footnote{We qualify a system as
+``detected'' if it produces a SNR above $8$ in the second-loudest
+detector to select only coincident events.} of 500 binaries was selected
+from a population with component masses distributed uniformly between
+$1$ and $30~\mathrm{M}_\odot$ with $m_1 + m_2 < 30~\mathrm{M}_\odot$,
+locations distributed uniformly in volume, and orientations distributed
+isotropically.  Data were simulated for each binary, and posteriors were
+estimated using the LIGO-Virgo parameter estimation library
+\texttt{LALInference}~\citep{2015PhRvD..91d2003V} using inspiral-only
+waveform models (merger and ringdown effects can provide additional
+information for some binaries, but we ignore those effects here).
+$\chieff$ is better constrained for binaries with low (negative)
+effective spins and low mass ratios.
+
+By neglecting these effects, We do not expect to qualitatively affect
+out conclusions, though they could affect predictions for the total
+number of detections necessary to constrain the population.  For
+example, if the universe preferentially forms asymmetric binaries with
+low mass ratios, individual $\chieff$ constraints will be systematically
+better, reducing the number of binaries needed to infer the properties
+of the population.
+
+\begin{figure}
+  \plotone{../plots/chi-eff-90cl}
+  \caption{Widths of the 90\% credible intervals for $\chieff$ for 500
+    binaries in a simulated detected population. $\chieff$ is better
+    constrained for systems with low $\chieff$ and low mass ratio.}
+  \label{fig:chi-eff-constraints}
+\end{figure}
 
 \bibliography{AlignedIsotropicGW}
 
