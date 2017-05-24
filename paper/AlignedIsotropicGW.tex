@@ -117,19 +117,11 @@ against the observed data to obtain a posterior distribution on the
 parameters that describe the compact binary source.
 
 The spin parameter with the largest effect on waveforms, and a
-correspondingly tight constraint from the data, is a mass-weighted,
-aligned, ``effective spin,''
-\begin{equation}
-  \chieff = \frac{c}{GM} \left( \frac{\vec{S}_1}{m_1} + \frac{\vec{S}_2}{m_2}
-  \right) \cdot \frac{\vec{L}}{\left| \vec{L} \right|} \equiv \frac{1}{M} \left( m_1 \chi_1 + m_2 \chi_2 \right),
-\end{equation}
-where $m_{1,2}$ are the gravitational masses of the more-massive (1)
-and less-massive (2) components, $M = m_1 + m_2$ is the total mass,
-$\vec{S}_{1,2}$ are the spin angular momentum vectors of the black
-holes in the binary, $\vec{L}$ is the orbital angular momentum vector,
-assumed to point in the $\hat{z}$ direction, and
-$0 \leq \chi_{1,2} \leq 1$ are the corresponding dimensionless
-projections of the individual \ac{BH} spins\cite{2016PhRvL.116x1102A}.
+correspondingly tight constraint from the
+data\cite{2016PhRvL.116x1102A}, is a mass-weighted combination of the
+components of the dimensionless spin vectors of the two black holes
+that are aligned with the orbital axis, the ``effective spin,''
+$-1 \leq \chieff \leq 1$.
 
 Figure \ref{fig:O1-posteriors} shows an approximation to the posterior
 inferred on $\chieff$ for the three likely \ac{GW} detections
@@ -176,23 +168,18 @@ data set.
 
 Each of our models for the merging \ac{BBH} spin population assumes
 that the merging black holes are of equal mass (this is marginally
-consistent with the three observations\cite{O1-BBH}, and the
-$\chieff$ distribution is not particularly sensitive to the mass ratio
-between the merging objects---see Section \ref{sec:mass-ratio}).  We
-assume that the population spin distribution factorises into a
-distribution for the spin magnitude $a$ and a distribution for the
-spin angles.  Finally, we assume that the distribution of spins is
-common to each component in a merging binary.  Choosing one of three
-magnitude distributions
-\begin{equation}
-  \label{eq:magnitude-dists}
-  p(a) = \begin{cases}
-    2\left(1-a \right) & \textnormal{``low''} \\
-    1 & \textnormal{``flat''} \\
-    2 a & \textnormal{``high''}
-  \end{cases},
-\end{equation}
-and pairing with either an isotropic angular distribution or a
+consistent with the three observations\cite{O1-BBH}, and the $\chieff$
+distribution is not particularly sensitive to the mass ratio between
+the merging objects---see Section \ref{sec:mass-ratio}).  We assume
+that the population spin distribution factorises into a distribution
+for the spin magnitude $a$ and a distribution for the spin angles.
+Finally, we assume that the distribution of spins is common to each
+component in a merging binary.  Choosing one of three magnitude
+distributions (see Methods Section
+\ref{methsec:chieff-spin-magnitude}), ``low'' (mean $a = 0.33$,
+standard deviation $0.24$), ``flat'' (mean $a = 0.5$, standard
+deviation $0.29$), ``high'' (mean $a = 0.67$, standard deviation
+$0.24$) and pairing with either an isotropic angular distribution or a
 distribution that generates perfect alignment with the positive $z$
 axis yields six different models for the $\chieff$ distribution.
 These models are shown in Figure \ref{fig:chieff-distribution-models}.
@@ -200,26 +187,27 @@ These models are shown in Figure \ref{fig:chieff-distribution-models}.
 \begin{figure}
   \plotone{../plots/chi-eff-distributions}
   \caption{\label{fig:chieff-distribution-models} The models for the
-    distribution of $\chieff$ considered in this paper.  In all models
-    we assume that the binary mass ratio $q \equiv m_1/m_2 = 1$ and
-    that the distribution of spin vectors is the same for each
-    component.  The ``flat'' (blue lines), ``high,'' (green lines),
-    and ``low'' (red lines) magnitude distributions are defined in
-    Eq.\ \eqref{eq:magnitude-dists}.  Solid lines give the $\chieff$
-    distribution under the assumption that the orientations of the
-    spins are isotropic; dashed lines give the distribution under the
-    assumption that both objects' spins are aligned with the orbital
-    angular momentum.  The isotropic distributions are readily
-    distinguished from the aligned distributions by the production of negative
-    $\chieff$ values, while the distinction between the three models
-    for the spin magnitude distribution is less sharp.}
+    population distribution of $\chieff$ considered in this paper.  In
+    all models we assume that the binary mass ratio
+    $q \equiv m_1/m_2 = 1$ and that the distribution of spin vectors
+    is the same for each component.  The ``flat'' (blue lines),
+    ``high,'' (green lines), and ``low'' (red lines) magnitude
+    distributions are defined in Eq.\ \eqref{eq:magnitude-dists}.
+    Solid lines give the $\chieff$ distribution under the assumption
+    that the orientations of the spins are isotropic; dashed lines
+    give the distribution under the assumption that both objects'
+    spins are aligned with the orbital angular momentum.  The
+    isotropic distributions are readily distinguished from the aligned
+    distributions by the production of negative $\chieff$ values,
+    while the distinction between the three models for the spin
+    magnitude distribution is less sharp.}
 \end{figure}
 
-The distributions in Eq.\ \eqref{eq:magnitude-dists} are not meant to
-represent any particular physical model, but rather to capture our
-uncertainty about the spin magnitude distribution, discussed in detail
-below; neither observations nor population synthesis codes can at this
-point authoritatively suggest \emph{any} particular spin
+These magnitude distributions not meant to represent any particular
+physical model, but rather to capture our uncertainty about the spin
+magnitude distribution, discussed in detail below; neither
+observations nor population synthesis codes can at this point
+authoritatively suggest \emph{any} particular spin
 distribution\cite{2015PhR...548....1M}.  Our models, however, allow us
 to see how sensitive the $\chieff$ distribution is to spin alignment
 given uncertainties about the spin magnitudes.
@@ -265,9 +253,6 @@ magnitude $\geq 0.2$ at 99\% credibility\cite{2016PhRvL.116x1103A}.
     100\% isotropic.}
   \label{fig:O1-odds}
 \end{figure}
-
-\subsection{Future Spin Measurements}
-\label{subsec:future}
 
 Estimates of the rate of \ac{BBH} coalescences give a reasonable
 chance of 10 additional \ac{BBH} detections in the next two
@@ -435,6 +420,36 @@ those for high-mass X-ray binaries.
 \end{addendum}
 
 \begin{methods}
+
+\section{Effective Spin and Spin Magnitude Distributions}
+\label{methsec:chieff-spin-magnitude}
+
+The effective spin is defined by\cite{2016PhRvL.116x1102A} 
+\begin{equation}
+  \chieff = \frac{c}{GM} \left( \frac{\vec{S}_1}{m_1} + \frac{\vec{S}_2}{m_2}
+  \right) \cdot \frac{\vec{L}}{\left| \vec{L} \right|} \equiv \frac{1}{M} \left( m_1 \chi_1 + m_2 \chi_2 \right),
+\end{equation}
+where $m_{1,2}$ are the gravitational masses of the more-massive (1)
+and less-massive (2) components, $M = m_1 + m_2$ is the total mass,
+$\vec{S}_{1,2}$ are the spin angular momentum vectors of the black
+holes in the binary, $\vec{L}$ is the orbital angular momentum vector,
+assumed to point in the $\hat{z}$ direction, and
+$0 \leq \chi_{1,2} \leq 1$ are the corresponding dimensionless
+projections of the individual \ac{BH} spins.
+
+We form the population distributions of $\chieff$ shown in Figure
+\ref{fig:chieff-distribution-models} by assuming that each black hole
+in a binary has a dimensionless spin magnitude drawn from one of three
+distributions,
+\begin{equation}
+  \label{eq:magnitude-dists}
+  p(a) = \begin{cases}
+    2\left(1-a \right) & \textnormal{``low''} \\
+    1 & \textnormal{``flat''} \\
+    2 a & \textnormal{``high''}
+  \end{cases},
+\end{equation}
+referred to as ``low,'' ``flat,'' and ``high'' in the text above.  
 
 \section{Mixture model}
 
