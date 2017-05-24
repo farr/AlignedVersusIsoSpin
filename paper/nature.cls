@@ -146,7 +146,7 @@
 
 \newcommand{\NAT@figcaption}[2][]{
     \refstepcounter{figure}
-    \sffamily\noindent\textbf{Figure \arabic{figure}}\hspace{1em}#2
+    \sffamily\noindent\textbf{\figurename{} \arabic{figure}} \hspace{1em} #2
   }
 
 \renewenvironment{table}{\@float{table}[p]\sffamily}{\end@float}
