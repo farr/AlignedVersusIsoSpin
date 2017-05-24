@@ -110,9 +110,6 @@
 
 \acresetall{}
 
-\section{\ac{GW} Spin Measurements and Model Selection}
-\label{sec:O1}
-
 Following the detection of a merging \ac{BBH} system, \ac{PE}
 tools\cite{2015PhRvD..91d2003V} compare model gravitational
 waveforms\cite{2014PhRvD..89h4006P,2014PhRvD..89f1502T,2014PhRvL.113o1101H}
@@ -144,7 +141,7 @@ credible interval.  None of the $\chieff$ posteriors are consistent
 with two black holes with large aligned spins,
 $\chi_{1,2} \gtrsim 0.5$; this contrasts with the large spins inferred
 for the majority of black holes in X-ray binaries with claimed spin
-measurements (see Section \ref{sec:discussion}).  The analysis here is
+measurements (see below).  The analysis here is
 relatively insensitive to the precise details of the posterior
 distributions; other conclusions are more sensitive.  In particular,
 our Gaussian approximation does permit $\chieff = 0$ for GW151226
@@ -221,11 +218,11 @@ These models are shown in Figure \ref{fig:chieff-distribution-models}.
 The distributions in Eq.\ \eqref{eq:magnitude-dists} are not meant to
 represent any particular physical model, but rather to capture our
 uncertainty about the spin magnitude distribution, discussed in detail
-in Section \ref{sec:discussion}; neither observations nor population
-synthesis codes can at this point authoritatively suggest \emph{any}
-particular spin distribution\cite{2015PhR...548....1M}.  Our models,
-however, allow us to see how sensitive the $\chieff$ distribution is
-to spin alignment given uncertainties about the spin magnitudes.
+below; neither observations nor population synthesis codes can at this
+point authoritatively suggest \emph{any} particular spin
+distribution\cite{2015PhR...548....1M}.  Our models, however, allow us
+to see how sensitive the $\chieff$ distribution is to spin alignment
+given uncertainties about the spin magnitudes.
 
 We fit hierarchical models of the three LIGO O1 observations using
 these six different, zero-parameter population distributions (see
@@ -304,28 +301,24 @@ unity than the odds ratio between angular distributions.
   \plotone{../plots/six-way-O2-model-selection}
   \caption{\label{fig:O2-predictions} Distribution of odds ratios
     predicted with 10 additional observations above the three
-    discussed in Section \ref{sec:O1}.  Each panel corresponds to
-    additional observations drawn from one of the $\chieff$
-    distribution models.  The model from which the additional
-    observations are drawn is outlined in red.  The height of the blue
-    bar gives the median odds ratio relative to the model from which
-    the additional observations are drawn; the green line gives the
-    68\% ($1 \sigma$) symmetric interval of odds ratios over 1000
-    separate draws from the model distribution.  The closest median
-    ratio between the most-favoured isotropic model and the
-    most-favoured aligned model is $\OTwoOddsIsoAlignedMin$,
-    corresponding to $\OTwoSigmaIsoAlignedMin\sigma$ preference for
-    the correct angular distribution; most models result in more than
-    $5\sigma$ preference for the correct angular distribution.
-    Because the three observations from Section \ref{sec:O1} are
-    included in each data set the ``correct'' model is not necessarily
-    preferred over the others, particularly when that model uses the
-    ``high'' magnitude distribution, which is strongly dis-favoured
-    from the O1 observations alone.}
+    discussed above.  Each panel corresponds to additional
+    observations drawn from one of the $\chieff$ distribution models.
+    The model from which the additional observations are drawn is
+    outlined in red.  The height of the blue bar gives the median odds
+    ratio relative to the model from which the additional observations
+    are drawn; the green line gives the 68\% ($1 \sigma$) symmetric
+    interval of odds ratios over 1000 separate draws from the model
+    distribution.  The closest median ratio between the most-favoured
+    isotropic model and the most-favoured aligned model is
+    $\OTwoOddsIsoAlignedMin$, corresponding to
+    $\OTwoSigmaIsoAlignedMin\sigma$ preference for the correct angular
+    distribution; most models result in more than $5\sigma$ preference
+    for the correct angular distribution.  Because the three existing
+    observations are included in each data set the ``correct'' model
+    is not necessarily preferred over the others, particularly when
+    that model uses the ``high'' magnitude distribution, which is
+    strongly dis-favoured from the O1 observations alone.}
 \end{figure}
-
-\section{Discussion}
-\label{sec:discussion}
 
 Most of our resolving power for the spin angular distribution is a
 result of the fact that our ``aligned'' models cannot produce
@@ -578,9 +571,8 @@ probability (here used to approximate the likelihood) that $\chieff$
 is between $A$ and $B$.  Using our approximations to the $\chieff$
 posteriors described above, this gives an odds ratio of $5$ in favour
 of the isotropic models, which is about a factor of two smaller than
-the ratio in the more careful calculation described in Section
-\ref{sec:O1}.  This is a satisfactory answer at an order-of-magnitude
-level.
+the ratio in the more careful calculation described above.  This is a
+satisfactory answer at an order-of-magnitude level.
 
 If the true distribution is isotropic and follows this simple model,
 and our measurement uncertainties on $\chieff$ are $\simeq 0.1$, then
