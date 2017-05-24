@@ -118,7 +118,8 @@ parameter with the largest effect on waveforms, and a correspondingly
 tight constraint from the data\cite{2016PhRvL.116x1102A}, is a
 mass-weighted combination of the components of the dimensionless spin
 vectors of the two black holes that are aligned with the orbital axis,
-the ``effective spin,'' $-1 \leq \chieff \leq 1$.
+the ``effective spin,'' $-1 < \chieff < 1$ (see Methods Section
+\ref{methsec:chieff-spin-magnitude}).
 
 Figure \ref{fig:O1-posteriors} shows an approximation to the posterior
 inferred on $\chieff$ for the three likely \ac{GW} detections
@@ -427,7 +428,15 @@ $\vec{S}_{1,2}$ are the spin angular momentum vectors of the black
 holes in the binary, $\vec{L}$ is the orbital angular momentum vector,
 assumed to point in the $\hat{z}$ direction, and
 $0 \leq \chi_{1,2} \leq 1$ are the corresponding dimensionless
-projections of the individual \ac{BH} spins.
+projections of the individual \ac{BH} spins.  Because the
+dimensionless spin parameter,
+\begin{equation}
+  \label{eq:a-def}
+  a_{1,2} = \frac{c}{G m_{1,2}^2} \left|\vec{S}_{1,2} \right|,
+\end{equation}
+of each black hole is bounded by $0 \leq a_{1,2} < 1$, the projections
+along the orbital axis are bounded by $-1 < \chi_{1,2} < 1$, and
+$-1 < \chieff < 1$.
 
 We form the population distributions of $\chieff$ shown in Figure
 \ref{fig:chieff-distribution-models} by assuming that each black hole
