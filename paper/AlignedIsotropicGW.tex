@@ -22,10 +22,10 @@
 \newcommand{\checkme}[1]{\textcolor{red}{#1}}
 %\newcommand{\checkme}[1]{ #1 }
 
-\newcommand{\OOneSigmaIsoAligned}{1.7}
-\newcommand{\OOneOddsIsoAligned}{0.087}
-\newcommand{\OTwoSigmaIsoAlignedMin}{2.9}
-\newcommand{\OTwoOddsIsoAlignedMin}{0.0035}
+\newcommand{\OOneSigmaIsoAligned}{2.4}
+\newcommand{\OOneOddsIsoAligned}{0.015}
+\newcommand{\OTwoSigmaIsoAlignedMin}{2.4}
+\newcommand{\OTwoOddsIsoAlignedMin}{0.016}
 
 \newcommand{\ilya}[1]{\textcolor{purple}{#1}}
 \newcommand{\will}[1]{\textcolor{cyan}{#1}}
@@ -73,8 +73,8 @@
 
 \begin{abstract}
   The first direct detections of gravitational
-  waves\cite{2016PhRvL.116f1102A,2016PhRvL.116x1103A,O1-BBH} from
-  merging binary black holes open a unique window into the binary
+  waves\cite{2016PhRvL.116f1102A,2016PhRvL.116x1103A,O1-BBH,PhysRevLett.118.221101}
+  from merging binary black holes open a unique window into the binary
   black hole formation environment.  One promising signature of the
   formation environment is the angular distribution of the black hole
   spins; systems formed through dynamical interactions among
@@ -87,18 +87,18 @@
   system\cite{TutukovYungelson:1973,TutukovYungelson:1993,Lipunov:1997,2016Natur.534..512B,Stevenson:2017,MandeldeMink:2016,Marchant:2016}.
   We consider existing gravitational wave measurements of the binary
   effective spin, the best-measured combination of spin
-  parameters\cite{2016PhRvL.116x1102A,O1-BBH}, in the three likely
-  binary black hole detections GW150914, LVT151012, and GW151226.  If
-  binary black hole spin magnitudes extend to high values we show that
-  the data already exhibit a $\OOneSigmaIsoAligned\sigma$
-  ($\OOneOddsIsoAligned$ odds ratio\footnote{An odds ratio of $r$ with
-    $r \ll 1$ is equivalent to $x \sigma$ with
-    $x = \Phi^{-1}\left( 1 - r/2 \right)$, where $\Phi$ is the unit
-    normal CDF.})  preference for an isotropic angular distribution
-  over an aligned one.  By considering the effect of 10 additional
-  detections\cite{2016ApJ...833L...1A} of systems, we show that if all
-  observations come from a single population such an augmented data
-  set would typically enable at least a
+  parameters\cite{2016PhRvL.116x1102A,O1-BBH,PhysRevLett.118.221101},
+  in the four likely binary black hole detections GW150914, LVT151012,
+  GW151226, and GW170104.  If binary black hole spin magnitudes extend
+  to high values we show that the data already exhibit a
+  $\OOneSigmaIsoAligned\sigma$ ($\OOneOddsIsoAligned$ odds
+  ratio\footnote{An odds ratio of $r$ with $r \ll 1$ is equivalent to
+    $x \sigma$ with $x = \Phi^{-1}\left( 1 - r/2 \right)$, where
+    $\Phi$ is the unit normal CDF.})  preference for an isotropic
+  angular distribution over an aligned one.  By considering the effect
+  of 10 additional detections\cite{2016ApJ...833L...1A} of systems, we
+  show that if all observations come from a single population such an
+  augmented data set would typically enable at least a
   $\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds
   ratio) distinction, and in most cases better than $5\sigma$
   ($2.9 \times 10^{-7}$ odds ratio).  The existing preference for
@@ -122,20 +122,21 @@ the ``effective spin,'' $-1 < \chieff < 1$ (see Methods Section
 \ref{methsec:chieff-spin-magnitude}).
 
 Figure \ref{fig:O1-posteriors} shows an approximation to the posterior
-inferred on $\chieff$ for the three likely \ac{GW} detections
-GW150914, GW151226 and LVT151012 from Advanced LIGO's first observing
-run (O1)\cite{O1-BBH}.  Because samples drawn from the posterior on
-$\chieff$ are not publicly released at this time, we have approximated
-the posterior as a Gaussian distribution with the same mean and 90\%
-credible interval, truncated to $-1 < \chieff < 1$.  None of the
-$\chieff$ posteriors are consistent with two black holes with large
-aligned spins, $\chi_{1,2} \gtrsim 0.5$; this contrasts with the large
-spins inferred for the majority of black holes in X-ray binaries with
-claimed spin measurements (see below).  The analysis here is
-relatively insensitive to the precise details of the posterior
-distributions; other conclusions are more sensitive.  In particular,
-our Gaussian approximation does permit $\chieff = 0$ for GW151226
-while the true posterior rules this out at high
+inferred on $\chieff$ for the four likely \ac{GW} detections GW150914,
+GW151226, GW170104, and LVT151012 from Advanced LIGO's first and
+second observing runs (O1 and O2)\cite{O1-BBH,PhysRevLett.118.221101}.
+Because samples drawn from the posterior on $\chieff$ are not publicly
+released at this time, we have approximated the posterior as a
+Gaussian distribution with the same mean and 90\% credible interval,
+truncated to $-1 < \chieff < 1$.  None of the $\chieff$ posteriors are
+consistent with two black holes with large aligned spins,
+$\chi_{1,2} \gtrsim 0.5$; this contrasts with the large spins inferred
+for the majority of black holes in X-ray binaries with claimed spin
+measurements (see below).  The analysis here is relatively insensitive
+to the precise details of the posterior distributions; other
+conclusions are more sensitive.  In particular, our Gaussian
+approximation does permit $\chieff = 0$ for GW151226 while the true
+posterior rules this out at high
 confidence\cite{2016PhRvL.116x1103A,O1-BBH}.
 
 \begin{figure}
