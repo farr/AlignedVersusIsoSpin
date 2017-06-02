@@ -109,16 +109,16 @@
 
 \acresetall{}
 
-Following the detection of a merging \ac{BBH} system, \ac{PE}
-tools\cite{2015PhRvD..91d2003V} compare model gravitational
-waveforms\cite{2014PhRvD..89h4006P,2014PhRvD..89f1502T,2014PhRvL.113o1101H}
-against the observed data to obtain a posterior distribution on the
-parameters that describe the compact binary source.  The spin
-parameter with the largest effect on waveforms, and a correspondingly
-tight constraint from the data\cite{2016PhRvL.116x1102A}, is a
-mass-weighted combination of the components of the dimensionless spin
-vectors of the two black holes that are aligned with the orbital axis,
-the ``effective spin,'' $-1 < \chieff < 1$ (see Methods Section
+Following the detection of a merging binary black hole system,
+parameter estimation tools\cite{2015PhRvD..91d2003V} compare model
+gravitational waveforms against the observed data to obtain a
+posterior distribution on the parameters that describe the compact
+binary source.  The spin parameter with the largest effect on
+waveforms, and a correspondingly tight constraint from the
+data\cite{2016PhRvL.116x1102A}, is a mass-weighted combination of the
+components of the dimensionless spin vectors of the two black holes
+that are aligned with the orbital axis, the ``effective spin,''
+$-1 < \chieff < 1$ (see Methods Section
 \ref{methsec:chieff-spin-magnitude}).
 
 Figure \ref{fig:O1-posteriors} shows an approximation to the posterior
@@ -162,13 +162,14 @@ distributions, even without good information about the magnitude
 distribution; to the extent that data favour negative $\chieff$ they
 weigh heavily against aligned models.  To quantify the degree of
 support for these two alternate explanations of small $\chieff$ values
-in the merging \ac{BBH} population, we compared the Bayesian evidence
-for various simple models of the spin population using the \ac{GW}
-data set.
+in the merging binary black hole population, we compared the Bayesian
+evidence for various simple models of the spin population using the
+\ac{GW} data set.
 
-Each of our models for the merging \ac{BBH} spin population assumes
-that the merging black holes are of equal mass (this is marginally
-consistent with the three observations\cite{O1-BBH}, and the $\chieff$
+Each of our models for the merging binary black hole spin population
+assumes that the merging black holes are of equal mass (this is
+marginally consistent with the
+observations\cite{O1-BBH,PhysRevLett.118.221101}, and the $\chieff$
 distribution is not particularly sensitive to the mass ratio between
 the merging objects---see Methods Section \ref{sec:mass-ratio}).  We
 assume that the population spin distribution factorises into a
@@ -185,10 +186,6 @@ $0.24$) and pairing with either an isotropic angular distribution or a
 distribution that generates perfect alignment with the positive $z$
 axis yields six different models for the $\chieff$ distribution.
 These models are shown in Figure \ref{fig:chieff-distribution-models}.
-While the Advanced LIGO searches use spin-aligned templates they are
-efficient in detecting misaligned binary black hole
-systems\cite{2016PhRvD..93l2003A}; we assume here that the $\chieff$
-distribution of observed sources follows the true population.
 
 \begin{figure}
   \plotone{../plots/chi-eff-distributions}
@@ -218,35 +215,36 @@ distribution\cite{2015PhR...548....1M}.  Our models, however, allow us
 to see how sensitive the $\chieff$ distribution is to spin alignment
 given uncertainties about the spin magnitudes.
 
-We fit hierarchical models of the three LIGO O1 observations using
-these six different, zero-parameter population distributions (see
-Methods Section \ref{sec:hierarchical}).  We also fit three mixture
-models for the population, where the spin magnitude distribution is
-fixed but the angular distribution is a weighted sum of the isotropic
-and aligned distribution.  The evidence, or marginal likelihood, for
-each of the models is shown in Figure \ref{fig:O1-odds}.  For all
-three magnitude distributions, the mixture models' posterior on the
-mixing fraction peaks at 100\% isotropic, which explains why the
-zero-parameter, pure-isotropic models are preferred over the
-single-parameter mixture models for every magnitude distribution with
-this data set.  Not surprisingly, given the small $\chieff$ values in
-the three detected systems, the most-favoured model among those with
-an isotropic angular distribution has the ``low'' magnitude
-distribution; the most favoured model among those with an aligned
-distribution also has the ``low'' magnitude distribution.  The odds
-ratio between the ``low'' aligned and ``low'' isotropic models is
-$\OOneOddsIsoAligned$, or $\OOneSigmaIsoAligned\sigma$; thus the data
-favour isotropic spins among our suite of models.  While the data
-favour spin amplitude distributions with small spin magnitudes, note
-that a model with all \ac{BBH} systems having zero spin is ruled out
-by the GW151226 measurements, which bound at least one black hole to
-have spin magnitude $\geq 0.2$ at 99\%
+We fit hierarchical models of the four existing LIGO O1 and O2
+observations using these six different, zero-parameter population
+distributions (see Methods Section \ref{sec:hierarchical}).  We also
+fit three mixture models for the population, where the spin magnitude
+distribution is fixed but the angular distribution is a weighted sum
+of the isotropic and aligned distribution.  The evidence, or marginal
+likelihood, for each of the models is shown in Figure
+\ref{fig:O1-odds}.  For all three magnitude distributions, the mixture
+models' posterior on the mixing fraction peaks at 100\% isotropic,
+which explains why the zero-parameter, pure-isotropic models are
+preferred over the single-parameter mixture models for every magnitude
+distribution with this data set.  Not surprisingly, given the small
+$\chieff$ values in the three detected systems, the most-favoured
+model among those with an isotropic angular distribution has the
+``low'' magnitude distribution; the most favoured model among those
+with an aligned distribution also has the ``low'' magnitude
+distribution.  The odds ratio between the ``low'' aligned and ``low''
+isotropic models is $\OOneOddsIsoAligned$, or
+$\OOneSigmaIsoAligned\sigma$; thus the data favour isotropic spins
+among our suite of models.  While the data favour spin amplitude
+distributions with small spin magnitudes, note that a model with all
+binary black hole systems having zero spin is ruled out by the
+GW151226 measurements, which bound at least one black hole to have
+spin magnitude $\geq 0.2$ at 99\%
 credibility\cite{2016PhRvL.116x1103A}.
 
 \begin{figure}
   \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models}
   \caption{\textbf{Odds ratios among our models using the
-      approximations to the posteriors on $\chieff$ from the O1
+      approximations to the posteriors on $\chieff$ from the O1 and O2
       observations shown in Figure \ref{fig:O1-posteriors}.}  The flat
     (``F''), high (``H''), and low (``L'') spin magnitude
     distributions (see Eq.\ \eqref{eq:magnitude-dists}) are paired
@@ -262,19 +260,19 @@ credibility\cite{2016PhRvL.116x1103A}.
   \label{fig:O1-odds}
 \end{figure}
 
-Estimates of the rate of \ac{BBH} coalescences give a reasonable
-chance of 10 additional \ac{BBH} detections in the next three
-years\cite{O1-BBH,2016ApJ...833L...1A,2016ApJS..227...14A}.  Assuming
-10 additional detections drawn from each of our six zero-parameter
-models for the spin distribution in addition to the three existing
-detections from O1, with observational uncertainties drawn randomly
-from the three Gaussian widths used to approximate the $\chieff$
-posteriors in Figure \ref{fig:O1-posteriors}\footnote{The measurement
-  uncertainty in $\chieff$ depends on the other parameters of the
-  merging \ac{BBH} system, particularly on the mass ratio.  Our
-  assumption about future observational uncertainties is appropriate
-  if the parameters of the three detected events are representative of
-  the parameters of future detections. See Methods Section
+Estimates of the rate of binary black hole coalescences give a
+reasonable chance of 10 additional binary black hole detections in the
+next three years\cite{O1-BBH,2016ApJ...833L...1A}.  Assuming 10
+additional detections drawn from each of our six zero-parameter models
+for the spin distribution in addition to the four existing detections
+from O1 and O2, with observational uncertainties drawn randomly from
+the three Gaussian widths used to approximate the $\chieff$ posteriors
+in Figure \ref{fig:O1-posteriors}\footnote{The measurement uncertainty
+  in $\chieff$ depends on the other parameters of the merging binary
+  black hole system, particularly on the mass ratio.  Our assumption
+  about future observational uncertainties is appropriate if the
+  parameters of the three detected events are representative of the
+  parameters of future detections. See Methods Section
   \ref{sec:chi-eff-precision} for further discussion.}, we find the
 odds ratios shown in Figure \ref{fig:O2-predictions}.  We find that
 most scenarios with an additional 10 detections allow the simulated
@@ -311,7 +309,7 @@ unity than the odds ratio between angular distributions.
     observations are included in each data set the ``correct'' model
     is not necessarily preferred over the others, particularly when
     that model uses the ``high'' magnitude distribution, which is
-    strongly dis-favoured from the O1 observations alone.}
+    strongly dis-favoured from the O1 and O2 observations alone.}
 \end{figure}
 
 Most of our resolving power for the spin angular distribution is a
@@ -482,18 +480,18 @@ We now partly relax the simplified assumptions made earlier by considering the p
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{../plots/posterior_on_isotropic_fraction.png}
-\caption{\textbf{Fraction of the BBH population coming from an isotropic
-  distribution under a mixture model.} The dotted line shows the flat
-  prior on the fraction of BBHs coming from an isotropic distribution,
-  $f_i$, under the mixture model. The 3 red lines show the posterior
-  on $f_i$ after O1 with our various assumptions regarding BH spin
-  magnitudes.  The solid line shows the posterior assuming that all
-  BHs have their spin magnitude drawn from the ``flat''
-  distribution. The dashed line assumes the ``high'' BH spin magnitude
-  distribution $p(a) = 2a$. The dot-dash line assumes the ``low''
-  distribution $p(a) = 2(1-a)$.  We see that for a wide range of
-  assumptions regarding BH spin magnitudes, the fraction coming from
-  an isotropic distribution $f_i$ peaks at 1.}
+\caption{\textbf{Fraction of the BBH population coming from an
+    isotropic distribution under a mixture model.} The dotted line
+  shows the flat prior on the fraction of BBHs coming from an
+  isotropic distribution, $f_i$, under the mixture model. The 3 red
+  lines show the posterior on $f_i$ after O1 and O2 with our various
+  assumptions regarding BH spin magnitudes.  The solid line shows the
+  posterior assuming that all BHs have their spin magnitude drawn from
+  the ``flat'' distribution. The dashed line assumes the ``high'' BH
+  spin magnitude distribution $p(a) = 2a$. The dot-dash line assumes
+  the ``low'' distribution $p(a) = 2(1-a)$.  We see that for a wide
+  range of assumptions regarding BH spin magnitudes, the fraction
+  coming from an isotropic distribution $f_i$ peaks at 1.}
 \label{fig:mixture_fraction_posterior}
 \end{figure}
 %
@@ -527,15 +525,15 @@ distributions for spin magnitudes respectively, compared to the prior
 mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52
 respectively, compared to the prior of 0.1. In all cases, the
 posterior peaks at $f_i = 1$. Thus, for these spin magnitude
-distributions we find that the current O1 LIGO observations constrain
-the majority of BBHs to have their spins drawn from an isotropic
-distribution. The evidence ratios of these models to the isotropic
-distribution with ``flat'' spin magnitudes are 0.85, 0.39 and 0.19 for
-the ``low'', ``flat'' and ``high'' spin magnitude models. Thus we
-cannot rule out a mixture with the current data.  If several different
-components contribute significantly to the true spin distribution it
-may take tens to hundreds of detections to accurately determined the
-mixing fraction, depending on the distribution of spin
+distributions we find that the current O1 and O2 LIGO observations
+constrain the majority of BBHs to have their spins drawn from an
+isotropic distribution. The evidence ratios of these models to the
+isotropic distribution with ``flat'' spin magnitudes are 0.85, 0.39
+and 0.19 for the ``low'', ``flat'' and ``high'' spin magnitude
+models. Thus we cannot rule out a mixture with the current data.  If
+several different components contribute significantly to the true spin
+distribution it may take tens to hundreds of detections to accurately
+determined the mixing fraction, depending on the distribution of spin
 magnitudes\cite{2017CQGra..34cLT01V,Stevenson:2017spin}.
 
 \section{Hierarchical Modelling} 
@@ -703,7 +701,12 @@ differences between the different magnitude distributions.
   \label{fig:mass-ratio-sensitivity}
 \end{figure}
 
-\section{Approximations in the Gravitational Waveform}
+\section{Approximations in the Gravitational Waveform and Selection Effects}
+While the Advanced LIGO searches use spin-aligned templates they are
+efficient in detecting misaligned binary black hole
+systems\cite{2016PhRvD..93l2003A}; we assume here that the $\chieff$
+distribution of observed sources follows the true population.
+
 The model waveforms used to infer the $\chieff$ of the three LIGO
 events incorporate approximations to the true behaviour of the merging
 systems that are expected to break down for sufficiently high
