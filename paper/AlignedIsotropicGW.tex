@@ -140,13 +140,13 @@ confidence\cite{2016PhRvL.116x1103A,O1-BBH}.
 \begin{figure}
   \plotone{../plots/chi-eff-mock-posteriors}
   \caption{\label{fig:O1-posteriors} \textbf{Approximate posteriors on
-      $\chieff$ from the Advanced LIGO O1 run
-      observations\cite{O1-BBH}.}  We approximate the posteriors
-    reported using Gaussians with the same median and 90\% credible
-    interval.  It is notable that none of the $\chieff$ posteriors
-    support high \ac{BH} spin magnitudes with aligned spins, suggested
-    by observations of stellar-mass black holes in X-ray
-    binaries\cite{2015PhR...548....1M}.}
+      $\chieff$ from the Advanced LIGO O1 and O2
+      observations\cite{O1-BBH,PhysRevLett.118.221101}.}  We
+    approximate the posteriors reported using Gaussians with the same
+    median and 90\% credible interval.  It is notable that none of the
+    $\chieff$ posteriors support high \ac{BH} spin magnitudes with
+    aligned spins, suggested by observations of stellar-mass black
+    holes in X-ray binaries\cite{2015PhR...548....1M}.}
 \end{figure}
 
 Small values of $\chieff$ as exhibited in these systems can result
@@ -175,7 +175,7 @@ distribution for the spin magnitude $a$ and a distribution for the
 spin angles.  Finally, we assume that the distribution of spins is
 common to each component in a merging binary (in reality the
 distributions of spin for each component in the binary may differ
-systematically due to different formation histories.  Choosing one of
+systematically due to different formation histories).  Choosing one of
 three magnitude distributions (see Methods Section
 \ref{methsec:chieff-spin-magnitude}), ``low'' (mean $a = 0.33$,
 standard deviation $0.24$), ``flat'' (mean $a = 0.5$, standard
@@ -290,7 +290,7 @@ unity than the odds ratio between angular distributions.
 \begin{figure}
   \plotone{../plots/six-way-O2-model-selection}
   \caption{\label{fig:O2-predictions} \textbf{Distribution of odds
-      ratios predicted with 10 additional observations above the three
+      ratios predicted with 10 additional observations above the four
       discussed above.}  Each panel corresponds to additional
     observations drawn from one of the $\chieff$ distribution models.
     The model from which the additional observations are drawn is
@@ -303,7 +303,7 @@ unity than the odds ratio between angular distributions.
     $\OTwoOddsIsoAlignedMin$, corresponding to
     $\OTwoSigmaIsoAlignedMin\sigma$ preference for the correct angular
     distribution; most models result in more than $5\sigma$ preference
-    for the correct angular distribution.  Because the three existing
+    for the correct angular distribution.  Because the four existing
     observations are included in each data set the ``correct'' model
     is not necessarily preferred over the others, particularly when
     that model uses the ``high'' magnitude distribution, which is
@@ -514,22 +514,23 @@ models. We use the ``flat'', ``high'' and ``low'' distributions
 magnitude drawn from the same distribution for both the aligned and
 isotropic populations. We calculate and plot the posterior on $f_i$
 given by Equation~\ref{eq:hierarchical-posterior} ($f_i=\lambda$ in
-the derivation) in Figure~\ref{fig:mixture_fraction_posterior}. We
-find the mean fraction of BBHs coming from an isotropic distribution
-is 0.63, 0.71 and 0.78 assuming the ``low'', ``flat'' and ``high''
-distributions for spin magnitudes respectively, compared to the prior
-mean of 0.5. The lower 90\% limits are 0.26, 0.39 and 0.52
-respectively, compared to the prior of 0.1. In all cases, the
-posterior peaks at $f_i = 1$. Thus, for these spin magnitude
-distributions we find that the current O1 and O2 LIGO observations
-constrain the majority of BBHs to have their spins drawn from an
-isotropic distribution. The evidence ratios of these models to the
-isotropic distribution with ``flat'' spin magnitudes are 0.85, 0.39
-and 0.19 for the ``low'', ``flat'' and ``high'' spin magnitude
-models. Thus we cannot rule out a mixture with the current data.  If
-several different components contribute significantly to the true spin
-distribution it may take tens to hundreds of detections to accurately
-determined the mixing fraction, depending on the distribution of spin
+the derivation) in Extended Data
+Figure~\ref{fig:mixture_fraction_posterior}. We find the mean fraction
+of BBHs coming from an isotropic distribution is 0.63, 0.71 and 0.78
+assuming the ``low'', ``flat'' and ``high'' distributions for spin
+magnitudes respectively, compared to the prior mean of 0.5. The lower
+90\% limits are 0.26, 0.39 and 0.52 respectively, compared to the
+prior of 0.1. In all cases, the posterior peaks at $f_i = 1$. Thus,
+for these spin magnitude distributions we find that the current O1 and
+O2 LIGO observations constrain the majority of BBHs to have their
+spins drawn from an isotropic distribution. The evidence ratios of
+these models to the isotropic distribution with ``flat'' spin
+magnitudes are 0.85, 0.39 and 0.19 for the ``low'', ``flat'' and
+``high'' spin magnitude models. Thus we cannot rule out a mixture with
+the current data.  If several different components contribute
+significantly to the true spin distribution it may take tens to
+hundreds of detections to accurately determined the mixing fraction,
+depending on the distribution of spin
 magnitudes\cite{2017CQGra..34cLT01V,Stevenson:2017spin}.
 
 \section{Hierarchical Modelling} 
@@ -661,11 +662,11 @@ $a = 0$.
 \end{figure}
 %
 
-In Figure~\ref{fig:smallspinsalpha} we plot the evidence ratio of
-isotropic to aligned distributions (plotted as the equivalent sigma)
-with spin magnitudes given by this model with $\alpha$ in the range
-$0$--$6$. The top axis shows the mean spin magnitude that value of
-$\alpha$ corresponds to (e.g., for the ``flat'' distribution
+In Extended Data Figure~\ref{fig:smallspinsalpha} we plot the evidence
+ratio of isotropic to aligned distributions (plotted as the equivalent
+sigma) with spin magnitudes given by this model with $\alpha$ in the
+range $0$--$6$. The top axis shows the mean spin magnitude that value
+of $\alpha$ corresponds to (e.g., for the ``flat'' distribution
 $\alpha = 0$, the mean spin magnitude is 0.5). We see that if typical
 BH spins are $\lesssim 0.2$ we have no evidence for one model over the
 other.
@@ -673,18 +674,19 @@ other.
 \section{Mass Ratio}
 \label{sec:mass-ratio}
 
-Figure \ref{fig:mass-ratio-sensitivity} shows the distributions of
-$\chieff$ that would obtain with a mass ratio $q = m_2/m_1 = 0.5$
-compared to the distributions with $q = 1$ used above.  The details of
-the distribution are sensitive to the mass ratio, but in our analysis
-we are primarily sensitive to the changing \emph{sign} of $\chieff$
-under the isotropic models.  This latter property is insensitive to
-mass ratio.  As an example, the distinction between the three
-different spin amplitude distributions after ten additional detections
-is quite weak compared to the aligned/isotropic distinction in Figure
-\ref{fig:O2-predictions}.  The differences in the $\chieff$
-distribution between $q = 1$ and $q = 0.5$ are even smaller than the
-differences between the different magnitude distributions.
+Extended Data Figure \ref{fig:mass-ratio-sensitivity} shows the
+distributions of $\chieff$ that would obtain with a mass ratio
+$q = m_2/m_1 = 0.5$ compared to the distributions with $q = 1$ used
+above.  The details of the distribution are sensitive to the mass
+ratio, but in our analysis we are primarily sensitive to the changing
+\emph{sign} of $\chieff$ under the isotropic models.  This latter
+property is insensitive to mass ratio.  As an example, the distinction
+between the three different spin amplitude distributions after ten
+additional detections is quite weak compared to the aligned/isotropic
+distinction in Figure \ref{fig:O2-predictions}.  The differences in
+the $\chieff$ distribution between $q = 1$ and $q = 0.5$ are even
+smaller than the differences between the different magnitude
+distributions.
 
 \begin{figure}
   \plotone{../plots/chi-eff-distributions-q05}
