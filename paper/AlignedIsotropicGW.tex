@@ -475,7 +475,7 @@ We now partly relax the simplified assumptions made earlier by considering the p
 %
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../plots/posterior_on_isotropic_fraction.png}
+\includegraphics[width=\textwidth]{../plots/posterior_on_isotropic_fraction_with_GW170104.png}
 \caption{\textbf{Fraction of the BBH population coming from an
     isotropic distribution under a mixture model.} The dotted line
   shows the flat prior on the fraction of BBHs coming from an
@@ -502,7 +502,7 @@ We now partly relax the simplified assumptions made earlier by considering the p
 %\end{figure}
 %
 
-We also fit a mixture model\cite{Stevenson:2017spin} (labelled model
+We fit a mixture model\cite{Stevenson:2017spin} (labelled model
 'M' in Figure~\ref{fig:O1-odds}) where a fraction $f_i$ of BBHs have
 spins drawn from an isotropic distribution, whilst a fraction
 $1 - f_i$ have their spins aligned with the orbital angular
@@ -625,6 +625,27 @@ the odds ratio becomes $150$, or $2.7\sigma$.  With small spin
 magnitudes, our angular resolving power vanishes, as discussed in more
 detail in Methods Section \ref{sec:smallspins}.
 
+\subsection{Accumulation of evidence}
+
+In Table~\ref{tab:accumulation} we show how the evidence for an isotropic distribution increases when including; only the 2 confirmed events---GW150914 and GW151226---from O1; all O1 events (including LVT151012); and all 4 likely binary black hole mergers, including GW170104. 
+
+\begin{table}
+\begin{centering}
+\begin{tabular}{ c |  c  |  c  | c  }
+  \hline 
+  \hline
+Events & $\sigma_{I/A}$ &  $\sigma_{I/A}$ & $\sigma_{I/A}$ \\ 
+ & ``Low'' & ``Flat'' & ``High'' \\ \hline
+GW150914 and GW151226 &  1.3 & 2.2 & 3.7 \\ %\hline
+All O1 events & 1.7 & 2.7 & 4.4 \\ %\hline
+All O1 events and GW170104 & \textbf{2.4} & 3.6 & 5.4 \\ \hline
+\end{tabular}
+\caption[]{Significance $\sigma_{I/A}$ of the odds ratio between the isotropic and aligned models using just GW150914 and GW151226, all 3 O1 events, and all 4 currently observed events (including GW170104). The number in bold is the result we quote in the main text.}
+\label{tab:accumulation}
+\end{centering}
+\end{table}
+
+
 \section{Effect of small spin magnitudes}
 \label{sec:smallspins}
 
@@ -648,7 +669,7 @@ $a = 0$.
 %
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../plots/sigma_v_alpha.png}
+\includegraphics[width=\textwidth]{../plots/sigma_v_alpha_GW170104.png}
 \caption{\textbf{Effect of small spins on evidence ratio of isotropic against
   aligned models.} The blue line shows the evidence ratio
   (plotted as the equivalent sigma) between a model where all systems
