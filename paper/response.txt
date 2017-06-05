@@ -1,0 +1,412 @@
+Thanks very much for the referee reports and editorial comments on our
+submitted manuscript.  We are re-submitting, having addressed all the
+comments provided.  There have been a very large number of changes to
+the text and references; below we list the changes made to address
+each point individually.  If you would like, we could also provide a
+diff against the original submitted LaTeX that would collect all the
+changes together (without the logical ordering by point).
+
+Editor's Comments
+=================
+
+Before addressing the comments in-line below, we should note that
+GW170104 has been announced between receiving referee reports and this
+re-submission.  We have, at the request of the editor, incorporated it
+into our calculations.  This changes the odds ratio between the
+isotropic and aligned models from 1.7 sigma to 2.4 sigma, and also the
+expected minimum "distinguishing power" between models with ten
+additional detections from 2.9 sigma to 2.4 sigma (not a
+typo---increased confidence in the isotropic models means that more
+detections from the "aligned" distributions are required to invert the
+odds ratio in favour of these latter models).  Very little other text
+has been changed as a result of the new detection (we have added
+"GW170104" in appropriate places, changed "three" to "four," etc); the
+central conclusions of the paper, and the caveats to the conclusions
+about low spins / kick misalignments remain basically unchanged.
+
+Item-by-item comments follow below:
+
+> We estimate the current length of your paper to be ~1800 words,
+  which exceeds our usual limit of 1500 words for Letters with four
+  display items. Keep in mind that important technical details that
+  are not central to the main message of the paper can be moved into
+  the Methods section (right now, titled Appendix -- it is far below
+  our general guideline of 3000 words).
+
+Through addressing the other comments provided and moving material
+into the Methods section (see below), we have significantly shortened
+the main text.
+
+> Letters begin with a fully referenced paragraph, ideally of about
+  200 words, aimed at readers in other disciplines. This paragraph
+  starts with a 2- to 3-sentence, basic introduction to the field that
+  conveys to readers the ‘state of the art’ immediately before this
+  work. It continues with a 1-sentence statement of the main findings
+  starting 'Here we report’ or an equivalent phrase; and finally,
+  concludes with 2 to 3 sentences putting the main findings into
+  general context so it is clear how the results described in the
+  paper have moved the field forward. Please do not introduce or use
+  *any* abbreviations/acronyms in the first paragraph, and severely
+  restrict their use elsewhere, as they make the paper difficult for
+  non-specialists to read. The spin parameter should certainly be
+  defined when first used, but it is probably not necessary to use it
+  in the first para.
+
+We have removed the abbreviations and the spin parameter frome the
+abstract, and shortened it to be below 200 words.
+
+> Further introductory material in the main text of the paper should
+  not be necessary. Please note that Letters do not have
+  sections/subsections/section headings.
+
+We have removed any section headings from the letter portion of the
+text (our Methods section retains section headings).
+
+> Each display equation uses 30-40 word equivalents, and our style is
+  to avoid them in the main text *unless* they are newly derived (not
+  relevant here) or crucial to the overall logical flow of the
+  text. The definition (eq 1) of effective spin probably could be
+  shifted to the Methods, with a brief description in words in the
+  main text. I am open to persuasion that eq 2 needs to be in the main
+  text, but probably it too can be shifted to the Methods.
+
+Both equations have now been shifted to the appendix.
+
+> The "Discussion" section is rather long-winded and inconclusive. We
+  recommend shifting that to the Methods, with a brief summary
+  paragraph in the main text.
+
+We have shortened and re-arranged the discussion section
+significantly.  However, we would prefer not to move what remains to
+Methods; we feel that the "caveats," particularly surrounding spin
+magnitudes and alignment in "field" binaries, are scientifically
+important.  For example, even one of our referees over-interpreted our
+results, claiming that we had shown that dynamical formation scenarios
+are strongly preferred over "field" formation---but in fact, it is
+certainly possible that field formation of BBH mergers produces small
+spins, in which case we cannot distinguish the two cases.  Moving the
+remaining discussion paragraphs (there are three, and one is quite
+short) to the Methods section would de-emphasise these caveats further
+and, we feel, could lead to more confusion.
+
+> Any discussion at the end of the paper should also be brief, and not
+  repeat what is already written in the initial summary
+  paragraph. (The final paragraph should be omitted -- Nature papers
+  do not end with summaries.)
+
+We removed the "summary" pargraph.
+
+> At the end of the main text document (after the main figure
+  legends), there should be a section entitled "Methods", which
+  provides a more detailed discussion of the additional methodological
+  information that would allow other researchers to replicate the
+  results (we define “Methods” quite broadly). The Methods section
+  will not appear in the print version but will be fully copy-edited
+  and appear online in the full-text HTML and PDF versions. The
+  Methods section should be written as concisely as possible but
+  should contain all elements necessary to allow interpretation and
+  reproduction of the results. If there are additional references in
+  the Methods section, their numbering should continue from the last
+  reference in the main paper, and the list should follow the Methods
+  section. If the methods require chemical structures, figures or
+  tables, these should be supplied as Extended Data (see below). For
+  mathematically complex methods, or methods that require an unusually
+  large number of figures or tables (beyond what can be accommodated
+  as Extended Data), the entire Methods section should instead be
+  supplied as a separate Supplementary Information.
+
+Our previous "Appendix" has been incorporated in a "Methods" section.
+We have moved material from the main text to this section (as
+indicated above and below), and have also added sections on code
+availability, the accumulation of evidence with events (see below re:
+GW170104), and precision of chi_eff measurements (including Extended
+Data Figure 5).
+
+> Letters can have up to 30 references in the main text; additional
+  references can be cited in (and listed after) the Methods section,
+  as detailed above. Each reference should have its own number, and
+  you should please include final page numbers, as well as initial
+  ones, unless the first ‘page’ is an article number (i.e. A&A
+  beginning in 2010, ApJ beginning in 2011). Our abbreviations for the
+  common astronomy journals are: Astrophys. J., Astron. J.,
+  Astron. Astrophys., Mon. Not. R. Astron. Soc.. Authors' last names
+  should come first, followed by their initials. Any reference to work
+  in preparation should be made in the main text, and not numbered in
+  the reference list. As we are now printing the titles of all
+  references cited, we would appreciate it if you could include them
+  in the revised version of your text. The year of publication should
+  be in parentheses at the end of the line.
+
+We have re-formatted the bibliography in line with Nature
+expectations.  We now have exactly 30 references in the main text,
+having eliminated some citations that were superfluous and moved
+others that were technical in nature to the Methods section.  The
+references eliminated (in ADS notation) and the justification are
+
+* 1993Natur.364..421K (Kulkarni, Hut & McMillan 1993): redundant with
+  Siggurdsson & Hernquist (1993).
+  
+* 1973NInfo..27...70T (Tutukov & Yungelson 1973): redundant with
+  Tutukov & Yungelson 1993.
+  
+* 1997MNRAS.288..245L (Lipunov, Postnov & Prokhorov 1997): redundant
+  with Tutukov & Yungelson (1993) and Belczynski, et al. (2016).
+  
+* 2016PhRvL.116x1102A (Abbott, et al. 2016, properties of merger
+  GW150914): redundant with Abbott, et al. (2016), 2016PhRvX...6d1015A
+  (Black holes during O1 observing run).
+  
+* 2014PhRvD..89h4006P,2014PhRvD..89f1502T,2014PhRvL.113o1101H: These
+  waveform technical references are not relevant to our argument or
+  discussion.
+
+* 2016ApJS..227...14A (Abbott, et al. 2016, GW150914 rates paper
+  supplemental information): gives technical information not relevant
+  to our argument, and therefore redundant with 2016ApJ...833L...1A
+  (GW150914 rates paper).
+
+* 2003MNRAS.341..385P (Podsiadlowski, Rappaport & Han 2003): redundant
+  with 2015ApJ...800...17F (Fragos & McClintock 2015).
+
+> We are now requiring authors to make a statement in the Methods
+  section regarding code availability, under the subheading "Code
+  availability". Authors can specify that "The code used to generate x
+  is available at y", or say that "We have opted not to make the code
+  available because ...".  This does not apply to standard data
+  reduction software (which should be named), but it does apply to
+  anything that you have modelled.
+
+We now make such a statement in Methods Section 1.
+
+> Your Figures 5-7 should be converted to Extended Data Figure 1, ED
+  Figure 2 and ED Figure 3. They should be referred to in that way in
+  the text.
+
+Done.
+
+Referee 1
+=========
+
+> The analysis presented in the manuscript is timely, well explained
+  and convincing (but see a few minor points below). The authors use
+  (estimates of) the measurement uncertainties published by LIGO for
+  the three events to determine the probability of observing the
+  measured parallel spin values from different underlying
+  populations. Multiple spin magnitude distributions are considered,
+  which is useful given our very limited information on the true
+  distribution. In fact the authors are likely conservative with
+  allowing negative spins with respect to the orbital axis for the
+  aligned case.
+
+[This statement is part of the "summary pargraphs" at the beginning of
+the report.]  In fact, the referee is confused on this point; because
+we *do not* allow negative spins, we obtain such distinguishing
+power.  We have tried to increase the prevalence of the text pointing
+this out, in light of the referee's confusion; the relevant paragraph
+is found on page 10 of the main body.
+
+> My chief concern with the manuscript is related to the novelty of
+  the results. The analysis of the existing 3 (2 + 1 likely)
+  detections is indeed performed here for the first time, and it is an
+  interesting result. However, the calculation regarding the number of
+  events needed for a 3-5 sigma constraint is similar to two previous
+  works, both referenced in the manuscript. Stevenson, Berry and
+  Mandel (1703.06873) carried out a very similar analysis to the one
+  in the manuscript. They established that about 5 observations would
+  be sufficient to distinguish between the two extreme cases of fully
+  spin-aligned or fully isotropic spin distributions, the identical
+  case considered in the present manuscript. While Stevenson et
+  al. use simulations as opposed to relying on the reconstructed spin
+  distributions by LIGO, and they consider a constant spin (0.7) as
+  opposed to the distributions adopted in the present manuscript, the
+  methods and conclusions are essentially the same.
+
+It is true that some of our conclusions are the same as Stevenson et
+al., but here (as the referee points out) we have for the first time
+applied such an analysis to actual detections; also, we have explored
+how the distinguishability between aligned and isotropic distributions
+behaves when the spin = 0.7 (optimistic) assumption of Stevenson et al
+is weakened.  Finally, we explore the limits of this method when spins
+are intrinsically small (< 0.2), and discuss this possibility in the
+context of field binary formation theory.  We feel this work, unlike
+Stevenson et al, gives the modelling community a clear target: for
+field fromation scenarios to work going forward, either kicks must be
+extreme enough to render the distribution approximately isotropic *or*
+spins must be typically < 0.2 to escape the constraints we have placed
+from the existing observations.
+
+> Regarding the above publications [Stevenson, et al. & Vitale et
+  al.], while they are cited and briefly discussed in the manuscript,
+  their their presentation is somewhat lacking. Mainly, the result of
+  Vitale et al. is said to carry out a similar analysis, but concludes
+  that several hundred sources would be needed (see lines 166-169). In
+  reality, Vitale et al. focuses on measuring the precise
+  contributions of different channels, e.g. 70% vs. 20%, as opposed to
+  ruling out the extreme cases in which all binaries originate from
+  the same channel (as is considered in the present paper). The
+  several hundred measurements will be needed for such precision
+  measurements, not for ruling out extreme cases.
+
+We have re-organised the discussion of Vitale, et al. (now Ref. 17).
+Rather than occupying its own paragraph, the different conclusions
+from Vitale et al are addressed where appropriate in the text.  On
+page 10, where we highlight that our "resolving power" comes from the
+constraint on our aligned models that chi_eff > 0, we now note that
+this constraint was not imposed on Vitale's "aligned" models, and
+highlight that in our work we find much higher confidence in isotropy
+after 10 detections as a result (>> 5 sigma versus ~3 sigma).  And
+then, on page 17 (Methods Section), where we discuss our mixture model
+and the possibility that there may be multiple channels in operation,
+we note that Vitale+ found that it would take O(100) detections to pin
+down the mixing fraction.
+
+> One additional concern with the analysis is that it considers
+  LVT151012 in the sample of observations along with the two 5sigma
+  detections. I note that it is mostly standard in the literature to
+  treat this candidate as a real event, on paper it has 10% chance of
+  being not astrophysical. Taking this 10% false alarm into account
+  may significantly reduce the 1.7sigma limit presented in the
+  manuscript.
+
+Taking the 10% probability of being "terrestrial" in origin into
+account to a first approximation reduces the accumulated evidence from
+LVT151012 by about 10%, so the odds ratio changes by a similar amount;
+this is not a significant change.  Incorportaing a "background"
+mixture model into our analysis would significantly complicate it,
+without changing the final result appreciably.
+
+> Another minor concern is that the template based searches used by
+  LIGO effectively use priors for the underlying spin distributions,
+  and for the searches finding the three events only spin-aligned
+  templates were used. It would be useful for the reader to briefly
+  comment on whether this can alter the observed spin distribution
+  from the underlying distribution.
+
+We now comment on this possibility in Methods Section 7.
+
+Referee 2
+==========
+
+> The paper as written is too technical and jargon laden for Nature.
+  The topic and result are, in my judgement, of interest to Nature
+  readers, and I recommend consideration for publication with a
+  significant rewrite of the abstract, introduction and conclusion to
+  make it more acceptable to a general audience.
+
+As you will have seen, we have re-written much of the introduction and
+conclusion to make it less technical and/or jargon laden.
+
+> The effective spin, χeff, appears in the abstract without context.
+  This is not appropriate for a Nature paper, whose abstract is
+  targeted for the general reader.
+
+Removed.
+
+> The abstract suggests binary black hole spins extend to high values
+  - this statement is strictly limited to stellar mass black holes,
+  and is derived for single black holes accreting from a main sequence
+  star or giant star.
+
+We still note in the abstract that our conclusions are dependent on
+the BBH spins extending to high values, but more completely discuss
+this caveat on page 10 and 11 (final pargraph of page 10, extending
+onto 11).
+
+> Section 1: the discussion of the effective spin needs to be expanded
+  and made clearer for the general reader.  There is notational
+  confusion with both "a" and "χ" used to refer to spin
+
+We have moved the equation and discussion referred to here to Methods
+Section 2, and now highlight the distinctions between "a" (spin
+magnitude), "chi" (spin projection on z-axis), and "chi_eff"
+(mass-weighted average of chis).
+
+> It is really necessary, for a Nature paper, to have a very brief
+  discussion of the spin parametrization and that there is a true
+  maximum spin for a black hole.
+
+We give this discussion and the associated limits now in Methods
+Section 2.
+
+> Approximating the posterior distribution as gaussian is strictly
+  non-physical. I believe that a (truncated) gaussian is an adequate
+  approximation to the distribution, but this requires some
+  justification in text.
+
+We have noted that our distributions are actually truncated in the
+main text; since no distribution extends near +/- 1, truncation has no
+effect on our results.
+
+> The motivation for the choice of P(a) needs to be expanded a bit,
+  the toy models used are not physically motivated and that needs to
+  be made clear. I'd even suggest a figure (for the general reader) of
+  P(a) for the three distributions, if there is room. Some mention of
+  the more general "low" distribution in Appendix C needs to be made
+  in the main text.
+
+We state in the text (this was also present in the last submitted
+version of the paper): "These magnitude distributions are not meant to
+represent any particular physical model, but rather to capture our
+uncertainty about the spin magnitude distribution; neither
+observations nor population synthesis codes can at this point
+authoritatively suggest any particular spin distribution.  Our models,
+however, allow us to see how sensitive the chi_eff distribution is to
+spin alignment given uncertainties about the spin magnitudes."  We
+have added a figure (Extended Data Figure 1) and some discussion
+(Methods Section 2, bottom of page 13) on the models.  We now mention
+"Appendix C" (now Methods Section 5) in the text on page 10, when
+discussing how our model selection would degrade if spin magnitudes
+are small.
+
+> I infer that the same P(a) is used for both members of the binary?
+  For binaries formed in the field, the mass accretion history for
+  each binary member is somewhat different in a systematic way and any
+  spin due to accretion, as opposed to natal spin, is likely to be
+  systematically different, to some extent, for each component. This
+  may be inconsequential, but may be prudent to mention.
+
+We now clearly state that p(a) is the same for both members in the
+binary and that this may not be true in the field due to
+systematically different evolutionary histories of the binary
+members.  Page 4, final pargraph.
+
+> There needs to a mention in the main text of the mass ratio
+  discussion in Appendix D.
+
+We now mention this in the final paragraph on Page 4, when discussing
+the equal-mass assumption we use in the main text.  We have also added
+a section dealing with the dependence of chi_eff uncertainty on mass
+ratio (Methods Section 8), which is discussed Footnote 2.
+
+> The spin-kick discussion is inadequate: there are discussion of the
+  issue in Brandt et al. 1995, Sipior et al 2002, Fryer 2003, Willems
+  et al 2005, as well as a number of more recent related papers.  In
+  particular, IF there are kicks, they correlate with the probability
+  of the binary remaining bound and its time to coalescence, and hence
+  the post-kick spin alignment is correlated with probability of
+  merger, possibly in a mass-dependent way. Arguably this is beyond
+  the scope of the paper, but it ought to be mentioned.
+
+We have re-written the alignment/kick discussion for field binaries to
+be more clear and concise.  It now appears in the middle paragraph on
+page 11.  We feel, however, that a detailed discussion of the effect
+of large kicks on rates is outside the scope of this paper (if we talk
+about these details, what about the effect of large kicks in dynamical
+formation scenarios---they reduce the rates further here---and what
+about all the other uncertainties in binary evolution and their effect
+on rates/spin correlations, etc).
+
+> The argument in the conclusion that this paper agrees with Stevenson
+  et al 2017, as opposed to Vitale et al, is somewhat misleading, as
+  there is substantial overlap in authorship and methodology between
+  Stevenson et al and this paper. The consistency of these results
+  should not be implied to constitute independent verification of
+  them.
+
+We have eliminated this paragraph, and do not make claims about
+independent verification in this current draft.
+
+
+
+
+

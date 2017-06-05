@@ -96,7 +96,7 @@
     normal CDF.})  preference for an isotropic angular distribution
   over an aligned one.  By considering the effect of 10 additional
   detections\cite{2016ApJ...833L...1A}, we show that such an augmented
-  data set would enable in most cases a prefernce stronger than
+  data set would enable in most cases a preference stronger than
   $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).  The existing
   preference for either an isotropic spin distribution or low spin
   magnitudes for the observed systems will be confirmed (or
@@ -165,22 +165,21 @@ Each of our models for the merging binary black hole spin population
 assumes that the merging black holes are of equal mass (this is
 marginally consistent with the
 observations\cite{O1-BBH,PhysRevLett.118.221101}, and the $\chieff$
-distribution is not particularly sensitive to the mass ratio between
-the merging objects---see Methods Section \ref{sec:mass-ratio}).  We
-assume that the population spin distribution factorises into a
-distribution for the spin magnitude $a$ and a distribution for the
-spin angles.  Finally, we assume that the distribution of spins is
-common to each component in a merging binary (in reality the
-distributions of spin for each component in the binary may differ
-systematically due to different formation histories).  Choosing one of
-three magnitude distributions (see Methods Section
+distribution is not sensitive to the mass ratio---see Methods Section
+\ref{sec:mass-ratio}).  We assume that the population spin
+distribution factorises into a distribution for the spin magnitude $a$
+and a distribution for the spin angles.  Finally, we assume that the
+distribution of spins is common to each component in a merging binary
+(the distributions of spin for each component in the binary could
+differ systematically due to different formation histories).  Choosing
+one of three magnitude distributions (see Methods Section
 \ref{methsec:chieff-spin-magnitude}), ``low'' (mean $a = 0.33$,
 standard deviation $0.24$), ``flat'' (mean $a = 0.5$, standard
 deviation $0.29$), ``high'' (mean $a = 0.67$, standard deviation
-$0.24$) and pairing with either an isotropic angular distribution or a
-distribution that generates perfect alignment with the positive $z$
-axis yields six different models for the $\chieff$ distribution.
-These models are shown in Figure \ref{fig:chieff-distribution-models}.
+$0.24$) and pairing with an isotropic angular distribution or a
+distribution that generates perfect alignment yields six different
+models for the $\chieff$ distribution.  These models are shown in
+Figure \ref{fig:chieff-distribution-models}.
 
 \begin{figure}
   \plotone{../plots/chi-eff-distributions}
@@ -203,37 +202,32 @@ These models are shown in Figure \ref{fig:chieff-distribution-models}.
 
 These magnitude distributions are not meant to represent any
 particular physical model, but rather to capture our uncertainty about
-the spin magnitude distribution, discussed in detail below; neither
-observations nor population synthesis codes can at this point
-authoritatively suggest \emph{any} particular spin
-distribution\cite{2015PhR...548....1M}.  Our models, however, allow us
-to see how sensitive the $\chieff$ distribution is to spin alignment
-given uncertainties about the spin magnitudes.
+the spin magnitude distribution; neither observations nor population
+synthesis codes can at this point authoritatively suggest \emph{any}
+particular spin distribution\cite{2015PhR...548....1M}.  Our models,
+however, allow us to see how sensitive the $\chieff$ distribution is
+to spin alignment given uncertainties about the spin magnitudes.
 
 We fit hierarchical models of the three existing LIGO O1 and GW170104
 observations using these six different, zero-parameter population
 distributions (see Methods Section \ref{sec:hierarchical}).  We also
-fit three mixture models for the population, where the spin magnitude
-distribution is fixed but the angular distribution is a weighted sum
-of the isotropic and aligned distribution.  The evidence, or marginal
-likelihood, for each of the models is shown in Figure
-\ref{fig:O1-odds}.  For all three magnitude distributions, the mixture
-models' posterior on the mixing fraction peaks at 100\% isotropic,
-which explains why the zero-parameter, pure-isotropic models are
-preferred over the single-parameter mixture models for every magnitude
-distribution with this data set.  Not surprisingly, given the small
-$\chieff$ values in the three detected systems, the most-favoured
-model among those with an isotropic angular distribution has the
-``low'' magnitude distribution; the most favoured model among those
-with an aligned distribution also has the ``low'' magnitude
-distribution.  The odds ratio between the ``low'' aligned and ``low''
-isotropic models is $\OOneOddsIsoAligned$, or
-$\OOneSigmaIsoAligned\sigma$; thus the data favour isotropic spins
-among our suite of models.  While the data favour spin amplitude
-distributions with small spin magnitudes, note that a model with all
-binary black hole systems having zero spin is ruled out by the
-GW151226 measurements, which bound at least one black hole to have
-spin magnitude $\geq 0.2$ at 99\%
+fit three mixture models for the population, where the angular
+distribution is a weighted sum of the isotropic and aligned
+distributions.  The evidence, or marginal likelihood, for each of the
+models is shown in Figure \ref{fig:O1-odds}.  For all three magnitude
+distributions, the mixture models' posterior on the mixing fraction
+peaks at 100\% isotropic.  Not surprisingly, given the small $\chieff$
+values in the three detected systems, the most-favoured model among
+those with an isotropic angular distribution has the ``low'' magnitude
+distribution; the most favoured model among those with an aligned
+distribution also has the ``low'' magnitude distribution.  The odds
+ratio between the ``low'' aligned and ``low'' isotropic models is
+$\OOneOddsIsoAligned$, or $\OOneSigmaIsoAligned\sigma$; thus the data
+favour isotropic spins among our suite of models.  While the data
+favour spin amplitude distributions with small spin magnitudes, note
+that a model with all binary black hole systems having zero spin is
+ruled out by the GW151226 measurements, which bound at least one black
+hole to have spin magnitude $\geq 0.2$ at 99\%
 credibility\cite{2016PhRvL.116x1103A}.
 
 \begin{figure}
@@ -259,29 +253,26 @@ Estimates of the rate of binary black hole coalescences give a
 reasonable chance of 10 additional binary black hole detections in the
 next three years\cite{O1-BBH,2016ApJ...833L...1A}.  Assuming 10
 additional detections drawn from each of our six zero-parameter models
-for the spin distribution in addition to the four existing detections
-from O1 and GW170104, with observational uncertainties drawn randomly
-from the three Gaussian widths used to approximate the $\chieff$
-posteriors in Figure \ref{fig:O1-posteriors}\footnote{The measurement
-  uncertainty in $\chieff$ depends on the other parameters of the
-  merging binary black hole system, particularly on the mass ratio.
-  Our assumption about future observational uncertainties is
-  appropriate if the parameters of the three detected events are
-  representative of the parameters of future detections. See Methods
-  Section \ref{sec:chi-eff-precision} for further discussion.}, we
-find the odds ratios shown in Figure \ref{fig:O2-predictions}.  We
-find that most scenarios with an additional 10 detections allow the
-simulated angular distribution to be inferred with greater than
-$5\sigma$ ($2.9 \times 10^{-7}$ odds) credibility; and in the most
-pessimistic case the distinction is typically
-$\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
-While such future detections should permit a confident distinction
-between \emph{angular} distributions, we would remain much less
-certain about the \emph{magnitude} distribution among the three
-options considered here until we have a larger number of observations.
-In Figure \ref{fig:O2-predictions}, the odds ratio between different
-magnitude distributions with the same angular distribution is much
-closer to unity than the odds ratio between angular distributions.
+in addition to the four existing detections from O1 and GW170104, with
+observational uncertainties drawn randomly from the three Gaussian
+widths used to approximate the $\chieff$ posteriors in Figure
+\ref{fig:O1-posteriors}\footnote{The measurement uncertainty in
+  $\chieff$ depends on the other parameters of the merging binary
+  black hole system, particularly on the mass ratio.  Our assumption
+  about future observational uncertainties is appropriate if the
+  parameters of the three detected events are representative of the
+  parameters of future detections. See Methods Section
+  \ref{sec:chi-eff-precision} for further discussion.}, we find the
+odds ratios shown in Figure \ref{fig:O2-predictions}.  We find that
+most scenarios with an additional 10 detections allow the simulated
+angular distribution to be inferred with greater than $5\sigma$
+($2.9 \times 10^{-7}$ odds) credibility. In the most pessimistic case
+the distinction is typically $\OTwoSigmaIsoAlignedMin\sigma$
+($\OTwoOddsIsoAlignedMin$ odds ratio).  While such future detections
+should permit a confident distinction between \emph{angular}
+distributions, we would remain much less certain about the
+\emph{magnitude} distribution among the three options considered here
+until we have a larger number of observations.  
 
 \begin{figure}
   \plotone{../plots/six-way-O2-model-selection}
@@ -320,11 +311,11 @@ observations\cite{2016PhRvL.116x1103A}.  An ``aligned'' model with
 spin magnitudes from our ``flat'' distribution but permitting spin
 vectors oriented anti-parallel to the orbital angular momentum
 (leading to the possibility of positive \emph{or} negative $\chieff$)
-can only be distinguised from an isotropic true population at
+can only be distinguished from an isotropic true population at
 $\sim 3 \sigma$ after 10--20 observations\cite{2017CQGra..34cLT01V};
 our flat aligned model can be distinguished from such a population at
 better than $5\sigma$ (odds $< 10^{-8}$) after 10 observations,
-emphasising the information content of the bound $\chieff > 0$ for our
+emphasizing the information content of the bound $\chieff > 0$ for our
 aligned models.
 
 Observational data on spin magnitudes in black hole systems is
