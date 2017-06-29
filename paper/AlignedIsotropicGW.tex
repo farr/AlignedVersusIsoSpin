@@ -3,7 +3,7 @@
 % arXiver will snag the right plots so they show up on Twitter :)
 %@arxiver{chi-eff-distributions.pdf,Wills_evidence_ratio_figure_with_mixture_models.png,six-way-O2-model-selection.pdf}
 
-\documentclass{nature-arxiv}
+\documentclass{nature}
 
 \usepackage{acronym}
 \usepackage{amsmath}
@@ -90,16 +90,13 @@
   binary black hole detections GW150914, LVT151012, GW151226, and
   GW170104.  If binary black hole spin magnitudes extend to high
   values we show that the data exhibit a $\OOneSigmaIsoAligned\sigma$
-  ($\OOneOddsIsoAligned$ odds ratio\footnote{An odds ratio of $r$ with
-    $r \ll 1$ is equivalent to $x \sigma$ with
-    $x = \Phi^{-1}\left( 1 - r/2 \right)$, where $\Phi$ is the unit
-    normal CDF.})  preference for an isotropic angular distribution
-  over an aligned one.  By considering the effect of 10 additional
-  detections\cite{2016ApJ...833L...1A}, we show that such an augmented
-  data set would enable in most cases a preference stronger than
-  $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).  The existing
-  preference for either an isotropic spin distribution or low spin
-  magnitudes for the observed systems will be confirmed (or
+  ($\OOneOddsIsoAligned$ odds ratio) preference for an isotropic
+  angular distribution over an aligned one.  By considering the effect
+  of 10 additional detections\cite{2016ApJ...833L...1A}, we show that
+  such an augmented data set would enable in most cases a preference
+  stronger than $5\sigma$ ($2.9 \times 10^{-7}$ odds ratio).  The
+  existing preference for either an isotropic spin distribution or low
+  spin magnitudes for the observed systems will be confirmed (or
   overturned) confidently in the near future.
 \end{abstract}
 
@@ -256,23 +253,22 @@ additional detections drawn from each of our six zero-parameter models
 in addition to the four existing detections from O1 and GW170104, with
 observational uncertainties drawn randomly from the three Gaussian
 widths used to approximate the $\chieff$ posteriors in Figure
-\ref{fig:O1-posteriors}\footnote{The measurement uncertainty in
-  $\chieff$ depends on the other parameters of the merging binary
-  black hole system, particularly on the mass ratio.  Our assumption
-  about future observational uncertainties is appropriate if the
-  parameters of the three detected events are representative of the
-  parameters of future detections. See Methods Section
-  \ref{sec:chi-eff-precision} for further discussion.}, we find the
-odds ratios shown in Figure \ref{fig:O2-predictions}.  We find that
-most scenarios with an additional 10 detections allow the simulated
-angular distribution to be inferred with greater than $5\sigma$
-($2.9 \times 10^{-7}$ odds) credibility. In the most pessimistic case
-the distinction is typically $\OTwoSigmaIsoAlignedMin\sigma$
-($\OTwoOddsIsoAlignedMin$ odds ratio).  While such future detections
-should permit a confident distinction between \emph{angular}
-distributions, we would remain much less certain about the
-\emph{magnitude} distribution among the three options considered here
-until we have a larger number of observations.  
+\ref{fig:O1-posteriors}, we find the odds ratios shown in Figure
+\ref{fig:O2-predictions}.  The measurement uncertainty in $\chieff$
+depends on the other parameters of the merging binary black hole
+system, particularly on the mass ratio.  Our assumption about future
+observational uncertainties is appropriate if the parameters of the
+three detected events are representative of the parameters of future
+detections. See Methods Section \ref{sec:chi-eff-precision} for
+further discussion.  We find that most scenarios with an additional 10
+detections allow the simulated angular distribution to be inferred
+with greater than $5\sigma$ ($2.9 \times 10^{-7}$ odds)
+credibility. In the most pessimistic case the distinction is typically
+$\OTwoSigmaIsoAlignedMin\sigma$ ($\OTwoOddsIsoAlignedMin$ odds ratio).
+While such future detections should permit a confident distinction
+between \emph{angular} distributions, we would remain much less
+certain about the \emph{magnitude} distribution among the three
+options considered here until we have a larger number of observations.
 
 \begin{figure}
   \plotone{../plots/six-way-O2-model-selection}
@@ -748,19 +744,18 @@ constrain $\chieff$ \emph{is} dependent on the system's properties, in
 particular its true $\chieff$ and mass ratio, which we illustrate in
 Extended Data Figure \ref{fig:chi-eff-constraints}.
 
-For this figure a detected population\footnote{We qualify a system as
-  ``detected'' if it produces a SNR above $8$ in the second-loudest
-  detector to select only coincident events.} of 500 binaries was
-selected from a population with component masses distributed uniformly
-between $1$ and $30~\mathrm{M}_\odot$ with
-$m_1 + m_2 < 30~\mathrm{M}_\odot$, locations distributed uniformly in
-volume, and orientations distributed isotropically.  Data were
-simulated for each binary, and posteriors were estimated using the
-LIGO-Virgo parameter estimation library
-\texttt{LALInference}\cite{2015PhRvD..91d2003V} using inspiral-only
-waveform models (merger and ringdown effects can provide additional
-information for some binaries, but we ignore those effects here).
-$\chieff$ is better constrained for binaries with high
+For this figure a detected population of 500 binaries was selected
+from a population with component masses distributed uniformly between
+$1$ and $30~\mathrm{M}_\odot$ with $m_1 + m_2 < 30~\mathrm{M}_\odot$,
+locations distributed uniformly in volume, and orientations
+distributed isotropically.  We qualify a system as ``detected'' if it
+produces a SNR above $8$ in the second-loudest detector to select only
+coincident events.  Data were simulated for each binary, and
+posteriors were estimated using the LIGO-Virgo parameter estimation
+library \texttt{LALInference}\cite{2015PhRvD..91d2003V} using
+inspiral-only waveform models (merger and ringdown effects can provide
+additional information for some binaries, but we ignore those effects
+here).  $\chieff$ is better constrained for binaries with high
 effective spins and high ($\sim$equal) mass ratios.
 
 We do not expect these effects to qualitatively affect
