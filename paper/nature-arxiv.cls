@@ -141,7 +141,7 @@
 %     }{
 %         \par\vfill
 %     }
-%     \sffamily\noindent\textbf{Figure \arabic{figure}}\hspace{1em}#2}
+%     \sffamily\noindent\textbf{\figurename{} \arabic{figure}}\hspace{1em}#2}
 %     }
 
 \newcommand{\NAT@figcaption}[2][]{
@@ -149,9 +149,9 @@
     \sffamily\noindent\textbf{\figurename{} \arabic{figure}} \hspace{1em} #2
   }
 
-\renewenvironment{table}{\@float{table}[p]\sffamily}{\end@float}
+\renewenvironment{table}{\@float{table}[h]\sffamily}{\end@float}
 
 %% ignore all \includegraphics commands in the document
-%\AtBeginDocument{\let\includegraphics\NAT@ignore}
+\AtBeginDocument{\let\includegraphics\NAT@ignore}
 
 \newcommand{\NAT@ignore}[2][]{}

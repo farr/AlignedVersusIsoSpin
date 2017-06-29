@@ -133,18 +133,6 @@ our Gaussian approximation does permit $\chieff = 0$ for GW151226
 while the true posterior rules this out at high
 confidence\cite{2016PhRvL.116x1103A,O1-BBH}.
 
-\begin{figure}
-  \plotone{../plots/chi-eff-mock-posteriors}
-  \caption{\label{fig:O1-posteriors} \textbf{Approximate posteriors on
-      $\chieff$ from the Advanced LIGO O1 and GW170104
-      observations\cite{O1-BBH,PhysRevLett.118.221101}.}  We
-    approximate the posteriors reported using Gaussians with the same
-    median and 90\% credible interval.  It is notable that none of the
-    $\chieff$ posteriors support high \ac{BH} spin magnitudes with
-    aligned spins, suggested by observations of stellar-mass black
-    holes in X-ray binaries\cite{2015PhR...548....1M}.}
-\end{figure}
-
 Small values of $\chieff$ as exhibited in these systems can result
 from either intrinsically small spins or larger spins whose direction
 is mis-aligned with the orbital angular momentum of the binary (i.e.\
@@ -180,24 +168,6 @@ distribution that generates perfect alignment yields six different
 models for the $\chieff$ distribution.  These models are shown in
 Figure \ref{fig:chieff-distribution-models}.
 
-\begin{figure}
-  \plotone{../plots/chi-eff-distributions}
-  \caption{\label{fig:chieff-distribution-models} \textbf{The models for the
-    population distribution of $\chieff$ considered in this paper.}  In
-    all models we assume that the binary mass ratio
-    $q \equiv m_1/m_2 = 1$ and that the distribution of spin vectors
-    is the same for each component.  The ``flat'' (blue lines),
-    ``high,'' (green lines), and ``low'' (red lines) magnitude
-    distributions are defined in Eq.\ \eqref{eq:magnitude-dists}.
-    Solid lines give the $\chieff$ distribution under the assumption
-    that the orientations of the spins are isotropic; dashed lines
-    give the distribution under the assumption that both objects'
-    spins are aligned with the orbital angular momentum.  The
-    isotropic distributions are readily distinguished from the aligned
-    distributions by the production of negative $\chieff$ values,
-    while the distinction between the three models for the spin
-    magnitude distribution is less sharp.}
-\end{figure}
 
 These magnitude distributions are not meant to represent any
 particular physical model, but rather to capture our uncertainty about
@@ -229,24 +199,6 @@ ruled out by the GW151226 measurements, which bound at least one black
 hole to have spin magnitude $\geq 0.2$ at 99\%
 credibility\cite{2016PhRvL.116x1103A}.
 
-\begin{figure}
-  \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models}
-  \caption{\textbf{Odds ratios among our models using the
-      approximations to the posteriors on $\chieff$ from the O1 and GW170104
-      observations shown in Figure \ref{fig:O1-posteriors}.}  The flat
-    (``F''), high (``H''), and low (``L'') spin magnitude
-    distributions (see Eq.\ \eqref{eq:magnitude-dists}) are paired
-    with isotropic (``I'') and aligned (``A'') angular distributions,
-    as well as a mixture model of the two (``$\mathrm{M}$'').  The
-    most-favoured models have the ``low'' distribution of spin
-    magnitudes.  The odds ratio between the best aligned and best
-    isotropic models is $\OOneOddsIsoAligned$, or
-    $\OOneSigmaIsoAligned\sigma$.  For all magnitude distributions the
-    pure-isotropic models are preferred over the mixture models;
-    correspondingly, the posterior on the mixture fraction peaks at
-    100\% isotropic.}
-  \label{fig:O1-odds}
-\end{figure}
 
 Estimates of the rate of binary black hole coalescences give a
 reasonable chance of 10 additional binary black hole detections in the
@@ -271,30 +223,6 @@ While such future detections should permit a confident distinction
 between \emph{angular} distributions, we would remain much less
 certain about the \emph{magnitude} distribution among the three
 options considered here until we have a larger number of observations.
-
-\begin{figure}
-  \plotone{../plots/six-way-O2-model-selection}
-  \caption{\label{fig:O2-predictions} \textbf{Distribution of odds
-      ratios predicted with 10 additional observations above the four
-      discussed above.}  Each panel corresponds to additional
-    observations drawn from one of the $\chieff$ distribution models.
-    The model from which the additional observations are drawn is
-    outlined in red.  The height of the blue bar gives the median odds
-    ratio relative to the model from which the additional observations
-    are drawn; the green line gives the 68\% ($1 \sigma$) symmetric
-    interval of odds ratios over 1000 separate draws from the model
-    distribution.  The closest median ratio between the most-favoured
-    isotropic model and the most-favoured aligned model is
-    $\OTwoOddsIsoAlignedMin$, corresponding to
-    $\OTwoSigmaIsoAlignedMin\sigma$ preference for the correct angular
-    distribution; most models result in more than $5\sigma$ preference
-    for the correct angular distribution.  Because the four existing
-    observations are included in each data set the ``correct'' model
-    is not necessarily preferred over the others, particularly when
-    that model uses the ``high'' magnitude distribution, which is
-    strongly dis-favoured from the O1 and GW170104 observations
-    alone.}
-\end{figure}
 
 Most of our resolving power for the spin angular distribution is a
 result of the fact that our ``aligned'' models cannot produce
@@ -623,11 +551,88 @@ evolution\cite{2004PhRvD..70l4020S,2007ApJ...661L.147B}.
   \href{mailto:w.farr@bham.ac.uk}{w.farr@bham.ac.uk}.
 \end{addendum}
 
+\newpage 
+
+\begin{figure}
+  \plotone{../plots/chi-eff-mock-posteriors}
+  \caption{\label{fig:O1-posteriors} \textbf{Approximate posteriors on
+      $\chieff$ from the Advanced LIGO O1 and GW170104
+      observations\cite{O1-BBH,PhysRevLett.118.221101}.}  We
+    approximate the posteriors reported using Gaussians with the same
+    median and 90\% credible interval.  It is notable that none of the
+    $\chieff$ posteriors support high \ac{BH} spin magnitudes with
+    aligned spins, suggested by observations of stellar-mass black
+    holes in X-ray binaries\cite{2015PhR...548....1M}.}
+\end{figure}
+
+\begin{figure}
+  \plotone{../plots/chi-eff-distributions}
+  \caption{\label{fig:chieff-distribution-models} \textbf{The models for the
+    population distribution of $\chieff$ considered in this paper.}  In
+    all models we assume that the binary mass ratio
+    $q \equiv m_1/m_2 = 1$ and that the distribution of spin vectors
+    is the same for each component.  The ``flat'' (blue lines),
+    ``high,'' (green lines), and ``low'' (red lines) magnitude
+    distributions are defined in Eq.\ \eqref{eq:magnitude-dists}.
+    Solid lines give the $\chieff$ distribution under the assumption
+    that the orientations of the spins are isotropic; dashed lines
+    give the distribution under the assumption that both objects'
+    spins are aligned with the orbital angular momentum.  The
+    isotropic distributions are readily distinguished from the aligned
+    distributions by the production of negative $\chieff$ values,
+    while the distinction between the three models for the spin
+    magnitude distribution is less sharp.}
+\end{figure}
+
+\begin{figure}
+  \plotone{../plots/Wills_evidence_ratio_figure_with_mixture_models}
+  \caption{\textbf{Odds ratios among our models using the
+      approximations to the posteriors on $\chieff$ from the O1 and GW170104
+      observations shown in Figure \ref{fig:O1-posteriors}.}  The flat
+    (``F''), high (``H''), and low (``L'') spin magnitude
+    distributions (see Eq.\ \eqref{eq:magnitude-dists}) are paired
+    with isotropic (``I'') and aligned (``A'') angular distributions,
+    as well as a mixture model of the two (``$\mathrm{M}$'').  The
+    most-favoured models have the ``low'' distribution of spin
+    magnitudes.  The odds ratio between the best aligned and best
+    isotropic models is $\OOneOddsIsoAligned$, or
+    $\OOneSigmaIsoAligned\sigma$.  For all magnitude distributions the
+    pure-isotropic models are preferred over the mixture models;
+    correspondingly, the posterior on the mixture fraction peaks at
+    100\% isotropic.}
+  \label{fig:O1-odds}
+\end{figure}
+
+\begin{figure}
+  \plotone{../plots/six-way-O2-model-selection}
+  \caption{\label{fig:O2-predictions} \textbf{Distribution of odds
+      ratios predicted with 10 additional observations above the four
+      discussed above.}  Each panel corresponds to additional
+    observations drawn from one of the $\chieff$ distribution models.
+    The model from which the additional observations are drawn is
+    outlined in red.  The height of the blue bar gives the median odds
+    ratio relative to the model from which the additional observations
+    are drawn; the green line gives the 68\% ($1 \sigma$) symmetric
+    interval of odds ratios over 1000 separate draws from the model
+    distribution.  The closest median ratio between the most-favoured
+    isotropic model and the most-favoured aligned model is
+    $\OTwoOddsIsoAlignedMin$, corresponding to
+    $\OTwoSigmaIsoAlignedMin\sigma$ preference for the correct angular
+    distribution; most models result in more than $5\sigma$ preference
+    for the correct angular distribution.  Because the four existing
+    observations are included in each data set the ``correct'' model
+    is not necessarily preferred over the others, particularly when
+    that model uses the ``high'' magnitude distribution, which is
+    strongly dis-favoured from the O1 and GW170104 observations
+    alone.}
+\end{figure}
+
 \begin{methods}
 
 % Reset the Figure Counter
 \setcounter{figure}{0}
 \renewcommand{\figurename}{Extended Data Figure}
+\renewcommand{\tablename}{Extended Data Table}
 
 \section{Effective Spin and Spin Magnitude Distributions}
 \label{methsec:chieff-spin-magnitude}
@@ -667,17 +672,6 @@ distributions,
 referred to as ``low,'' ``flat,'' and ``high'' in the text above.
 These distributions are shown in Extended Data Figure \ref{fig:pa}.
 
-\begin{figure}
-  \includegraphics[width=\columnwidth]{../plots/pa}
-  \caption{\textbf{Distributions of spin magnitudes.}  See Eq.\
-    \eqref{eq:magnitude-dists} for the definition of the low (blue
-    line), flat (green line), and high (red line) magnitude
-    distributions used here.  The distributions have mean spin $0.33$,
-    $0.5$, and $0.67$ and standard deviations $0.24$, $0.29$, and
-    $0.24$.}
-  \label{fig:pa}
-\end{figure}
-
 \section{Mixture model}
 
 While we carried out Bayesian comparisons between isotropic and aligned spin distributions under various assumptions, a preference for one of the considered models over the others does not necessarily indicate that it is the correct model.  All of the considered models could be inaccurate for the actual distribution, especially since all of the considered models are based on a number of additional assumptions, such as decoupled spin magnitude and spin misalignment angle distributions and identical distributions for primary and secondary spins.
@@ -685,23 +679,6 @@ While we carried out Bayesian comparisons between isotropic and aligned spin dis
 We now partly relax the simplified assumptions made earlier by considering the possibility that the true distribution of BBH spin-orbit misalignments observed by LIGO is a mixture of binaries with aligned spins and binaries with isotropic spins.
 
 %
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{../plots/posterior_on_isotropic_fraction_with_GW170104.png}
-\caption{\textbf{Fraction of the BBH population coming from an
-    isotropic distribution under a mixture model.} The dotted line
-  shows the flat prior on the fraction of BBHs coming from an
-  isotropic distribution, $f_i$, under the mixture model. The 3 red
-  lines show the posterior on $f_i$ after O1 and GW170104 with our
-  various assumptions regarding BH spin magnitudes.  The solid line
-  shows the posterior assuming that all BHs have their spin magnitude
-  drawn from the ``flat'' distribution. The dashed line assumes the
-  ``high'' BH spin magnitude distribution $p(a) = 2a$. The dot-dash
-  line assumes the ``low'' distribution $p(a) = 2(1-a)$.  We see that
-  for a wide range of assumptions regarding BH spin magnitudes, the
-  fraction coming from an isotropic distribution $f_i$ peaks at 1.}
-\label{fig:mixture_fraction_posterior}
-\end{figure}
 %
 
 %-- could also use the cumulative posterior
@@ -840,24 +817,7 @@ detail in Methods Section \ref{sec:smallspins}.
 
 \subsection{Accumulation of evidence}
 
-In Table~\ref{tab:accumulation} we show how the evidence for an isotropic distribution increases when including: only the 2 confirmed events---GW150914 and GW151226---from O1; all O1 events (including LVT151012); and all 4 likely binary black hole mergers, including GW170104. 
-
-\begin{table}
-\begin{centering}
-\begin{tabular}{ c |  c  |  c  | c  }
-  \hline 
-  \hline
-Events & $\sigma_{I/A}$ &  $\sigma_{I/A}$ & $\sigma_{I/A}$ \\ 
- & ``Low'' & ``Flat'' & ``High'' \\ \hline
-GW150914 and GW151226 &  1.3 & 2.2 & 3.7 \\ %\hline
-All O1 events & 1.7 & 2.7 & 4.4 \\ %\hline
-All O1 events and GW170104 & \textbf{2.4} & 3.5 & 5.4 \\ \hline
-\end{tabular}
-\caption[]{Significance $\sigma_{I/A}$ of the odds ratio between the isotropic and aligned models using just GW150914 and GW151226, all 3 O1 events, and all 4 currently observed events (including GW170104). The number in bold is the result we quote in the main text.}
-\label{tab:accumulation}
-\end{centering}
-\end{table}
-
+In Extended Data Table~\ref{tab:accumulation} we show how the evidence for an isotropic distribution increases when including: only the 2 confirmed events---GW150914 and GW151226---from O1; all O1 events (including LVT151012); and all 4 likely binary black hole mergers, including GW170104. 
 
 \section{Effect of small spin magnitudes}
 \label{sec:smallspins}
@@ -883,20 +843,6 @@ $\alpha$, this distribution becomes more peaked towards
 $a = 0$.
 
 %
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{../plots/sigma_v_alpha_GW170104.png}
-\caption{\textbf{Effect of small spins on evidence ratio of isotropic against
-  aligned models.} The blue line shows the evidence ratio
-  (plotted as the equivalent sigma) between a model where all systems
-  are from an isotropic distribution, versus one where all systems are
-  aligned, as a function of the power law $\alpha$ corresponding
-  to Equation~\ref{eq:lowspinalpha}.  The top axis shows the mean spin
-  magnitude $\bar{a}$ which this $\alpha$ corresponds to. We see that
-  for mean spin magnitudes $\lesssim 0.2$ we find no evidence for
-  either distribution over the other.}
-\label{fig:smallspinsalpha}
-\end{figure}
 %
 
 In Extended Data Figure~\ref{fig:smallspinsalpha} we plot the evidence
@@ -925,16 +871,6 @@ the $\chieff$ distribution between $q = 1$ and $q = 0.5$ are even
 smaller than the differences between the different magnitude
 distributions.
 
-\begin{figure}
-  \plotone{../plots/chi-eff-distributions-q05}
-  \caption{\textbf{Distributions of $\chieff$ assuming all merging
-      black holes have equal masses ($q=1$) or a 2:1 mass ratio
-      ($q = 0.5$).}  The details of the distribution are sensitive to
-    the mass ratio, but in our analysis we are primarily sensitive to
-    the changing \emph{sign} of $\chieff$ under the isotropic models.
-    This latter property is unchanged under changing mass ratio.}
-  \label{fig:mass-ratio-sensitivity}
-\end{figure}
 
 \section{Approximations in the Gravitational Waveform and Selection Effects}
 While the Advanced LIGO searches use spin-aligned templates they are
@@ -994,17 +930,6 @@ example, if the universe preferentially forms asymmetric binaries with
 low mass ratios, individual $\chieff$ constraints will be systematically
 worse, requiring more binaries to infer the properties
 of the population.
-
-\begin{figure}
-  \plotone{../plots/chi-eff-90cl}
-  \caption{\textbf{Widths of the 90\% credible intervals for $\chieff$
-      for 500 binaries in a simulated detected population.} $\chieff$
-    is better constrained for systems with high $\chieff$ and high mass
-    ratio.}
-  \label{fig:chi-eff-constraints}
-\end{figure}
-
-\end{methods}
 
 \section{Code Availability}
 
@@ -1144,6 +1069,92 @@ available at \url{https://github.com/farr/AlignedVersusIsoSpin}.
   \bibinfo{pages}{064035} (\bibinfo{year}{2016}).
 
 \end{thebibliography}
+
+\newpage
+
+\begin{table}
+\begin{centering}
+\begin{tabular}{ c |  c  |  c  | c  }
+  \hline 
+  \hline
+Events & $\sigma_{I/A}$ &  $\sigma_{I/A}$ & $\sigma_{I/A}$ \\ 
+ & ``Low'' & ``Flat'' & ``High'' \\ \hline
+GW150914 and GW151226 &  1.3 & 2.2 & 3.7 \\ %\hline
+All O1 events & 1.7 & 2.7 & 4.4 \\ %\hline
+All O1 events and GW170104 & \textbf{2.4} & 3.5 & 5.4 \\ \hline
+\end{tabular}
+\caption[]{Significance $\sigma_{I/A}$ of the odds ratio between the isotropic and aligned models using just GW150914 and GW151226, all 3 O1 events, and all 4 currently observed events (including GW170104). The number in bold is the result we quote in the main text.}
+\label{tab:accumulation}
+\end{centering}
+\end{table}
+
+\newpage
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../plots/pa}
+  \caption{\textbf{Distributions of spin magnitudes.}  See Eq.\
+    \eqref{eq:magnitude-dists} for the definition of the low (blue
+    line), flat (green line), and high (red line) magnitude
+    distributions used here.  The distributions have mean spin $0.33$,
+    $0.5$, and $0.67$ and standard deviations $0.24$, $0.29$, and
+    $0.24$.}
+  \label{fig:pa}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{../plots/posterior_on_isotropic_fraction_with_GW170104.png}
+\caption{\textbf{Fraction of the BBH population coming from an
+    isotropic distribution under a mixture model.} The dotted line
+  shows the flat prior on the fraction of BBHs coming from an
+  isotropic distribution, $f_i$, under the mixture model. The 3 red
+  lines show the posterior on $f_i$ after O1 and GW170104 with our
+  various assumptions regarding BH spin magnitudes.  The solid line
+  shows the posterior assuming that all BHs have their spin magnitude
+  drawn from the ``flat'' distribution. The dashed line assumes the
+  ``high'' BH spin magnitude distribution $p(a) = 2a$. The dot-dash
+  line assumes the ``low'' distribution $p(a) = 2(1-a)$.  We see that
+  for a wide range of assumptions regarding BH spin magnitudes, the
+  fraction coming from an isotropic distribution $f_i$ peaks at 1.}
+\label{fig:mixture_fraction_posterior}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{../plots/sigma_v_alpha_GW170104.png}
+\caption{\textbf{Effect of small spins on evidence ratio of isotropic against
+  aligned models.} The blue line shows the evidence ratio
+  (plotted as the equivalent sigma) between a model where all systems
+  are from an isotropic distribution, versus one where all systems are
+  aligned, as a function of the power law $\alpha$ corresponding
+  to Equation~\ref{eq:lowspinalpha}.  The top axis shows the mean spin
+  magnitude $\bar{a}$ which this $\alpha$ corresponds to. We see that
+  for mean spin magnitudes $\lesssim 0.2$ we find no evidence for
+  either distribution over the other.}
+\label{fig:smallspinsalpha}
+\end{figure}
+
+\begin{figure}
+  \plotone{../plots/chi-eff-distributions-q05}
+  \caption{\textbf{Distributions of $\chieff$ assuming all merging
+      black holes have equal masses ($q=1$) or a 2:1 mass ratio
+      ($q = 0.5$).}  The details of the distribution are sensitive to
+    the mass ratio, but in our analysis we are primarily sensitive to
+    the changing \emph{sign} of $\chieff$ under the isotropic models.
+    This latter property is unchanged under changing mass ratio.}
+  \label{fig:mass-ratio-sensitivity}
+\end{figure}
+
+\begin{figure}
+  \plotone{../plots/chi-eff-90cl}
+  \caption{\textbf{Widths of the 90\% credible intervals for $\chieff$
+      for 500 binaries in a simulated detected population.} $\chieff$
+    is better constrained for systems with high $\chieff$ and high mass
+    ratio.}
+  \label{fig:chi-eff-constraints}
+\end{figure}
+
+\end{methods}
 
 %\bibliographystyle{naturemag-arxiv}
 %\bibliography{AlignedIsotropicGW}
