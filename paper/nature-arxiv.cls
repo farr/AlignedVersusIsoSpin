@@ -152,6 +152,6 @@
 \renewenvironment{table}{\@float{table}[h]\sffamily}{\end@float}
 
 %% ignore all \includegraphics commands in the document
-\AtBeginDocument{\let\includegraphics\NAT@ignore}
+% \AtBeginDocument{\let\includegraphics\NAT@ignore}
 
 \newcommand{\NAT@ignore}[2][]{}
